@@ -117,7 +117,6 @@ public class Controller : MonoBehaviour {
 				GamePad.SetVibration (PlayerIndex.Four, 0, 0);
 			}
 			break;
-			break;
 		}
 	}
 
