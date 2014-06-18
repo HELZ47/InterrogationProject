@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{1D1480FE-46C7-D58F-5732-8F220E6C695D}</ProjectGuid>
+	<ProjectGuid>{65F9988E-35E4-DE8C-E748-616883299801}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -47,11 +47,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Controller.cs" />
-     <Compile Include="Assets\XInputDotNet\Examples\GUI_Button.cs" />
+     <Compile Include="Assets\GUI_Button.cs" />
+     <Compile Include="Assets\GameManager.cs" />
+     <Compile Include="Assets\InterfaceManager.cs" />
      <Compile Include="Assets\XInputDotNet\Examples\XInputTestCS.cs" />
      <None Include="Assets\XInputDotNet\MITLicense.txt" />
  <Reference Include="XInputDotNetPure">
- <HintPath>C:/Users/Li Zhi/Desktop/Controller_Test/Assets/Plugins/x86/XInputDotNetPure.dll</HintPath>
+ <HintPath>C:/Users/Li Zhi/Documents/InterrogationProject/Interrogation_Project/Assets/Plugins/x86/XInputDotNetPure.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
