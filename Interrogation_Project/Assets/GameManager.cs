@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		_pInstance.gameState = GameState.Startup;
+		_pInstance.prisonerInfoPanel = GameObject.Find ("img_StartGame_Instructions").GetComponent<InterfaceManager>();
 	}
 	
 	// Update is called once per frame

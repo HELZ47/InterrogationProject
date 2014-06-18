@@ -50,6 +50,7 @@
      <Compile Include="Assets\GUI_Button.cs" />
      <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\InterfaceManager.cs" />
+     <Compile Include="Assets\Question_Timer.cs" />
      <Compile Include="Assets\XInputDotNet\Examples\XInputTestCS.cs" />
      <None Include="Assets\XInputDotNet\MITLicense.txt" />
  <Reference Include="XInputDotNetPure">

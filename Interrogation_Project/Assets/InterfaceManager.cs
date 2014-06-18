@@ -7,10 +7,11 @@ public class InterfaceManager : MonoBehaviour {
 	public enum InterfaceType { StartUp, MainMenu, Other }
 	public InterfaceType interfaceType;
 
-	public enum MMIconType { Background, Question, PrisonerIcon, PrisonerInfo }
+	public enum MMIconType { Background, Question, PrisonerIcon, PrisonerInfo, Instruction }
 	public MMIconType mmIconType;
 
 	public InterfaceManager prisonerInfoPanel;
+	public Question_Timer questionTimer;
 
 	public bool enabled;
 
@@ -70,6 +71,18 @@ public class InterfaceManager : MonoBehaviour {
 				break;
 			case MMIconType.Question:
 				enabled = true;
+				if (GetComponent<GUI_Button>().clicked) {
+					GameManager.instance.prisonerInfoPanel = this.prisonerInfoPanel;
+					questionTimer.StartTimer ();
+				}
+				break;
+			case MMIconType.Instruction:
+				if (GameManager.instance.prisonerInfoPanel == this) {
+					enabled = true;
+				}
+				else {
+					enabled = false;
+				}
 				break;
 			}
 
