@@ -11,10 +11,17 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	public enum GameState {Startup, MainMenu, Other }
+	public enum GameState {Startup, MainMenu, LieDetector }
 	public GameState gameState;
 
 	public InterfaceManager prisonerInfoPanel;
+	public Question_Timer questionTimer;
+
+	public enum LieDetectorState { Formulated_Question, Pick_Prisoner, Pick_Answer, Detect_Lie }
+	public LieDetectorState lieDetectorState;
+
+	public enum LDQuestionType { Where, Who, How, When }
+	public LDQuestionType ldQuestionType;
 
 	//Wake function
 	void Awake () {
@@ -35,7 +42,12 @@ public class GameManager : MonoBehaviour {
 				_pInstance.gameState = GameState.MainMenu;
 			}
 			break;
+		case GameState.MainMenu:
+			if (questionTimer.timeUp) {
+				_pInstance.gameState = GameState.LieDetector;
+				_pInstance.lieDetectorState = LieDetectorState.Formulated_Question;
+			}
+			break;
 		}
-		print (_pInstance.gameState);
 	}
 }

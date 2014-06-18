@@ -6,7 +6,7 @@ public class Question_Timer : MonoBehaviour {
 	//Fields
 	public GUIText bigTimer, smallTimer;
 	public float timer, timeLimit;
-	public bool timerCounting;
+	public bool timerCounting, timeUp;
 
 
 	// Use this for initialization
@@ -20,8 +20,21 @@ public class Question_Timer : MonoBehaviour {
 			timer -= Time.deltaTime;
 		}
 		bigTimer.text = smallTimer.text = ((int)(timer/60)).ToString() + ":" + (timer%60).ToString("F0");
-		smallTimer.enabled = timerCounting;
-		bigTimer.enabled = (GameManager.instance.prisonerInfoPanel == GameObject.Find ("img_StartQuestion_Instructions").GetComponent<InterfaceManager>());
+
+		if (GameManager.instance.gameState == GameManager.GameState.MainMenu) {
+			smallTimer.enabled = timerCounting;
+			bigTimer.enabled = (GameManager.instance.prisonerInfoPanel == GameObject.Find ("img_StartQuestion_Instructions").GetComponent<InterfaceManager>());
+		}
+		else {
+			smallTimer.enabled = bigTimer.enabled = false;
+		}
+
+		if (timer < 0) {
+			timeUp = true;
+		}
+		else {
+			timeUp = false;
+		}
 	}
 
 	public void StartTimer () {
