@@ -12,6 +12,7 @@ public class InterfaceManager : MonoBehaviour {
 
 	public InterfaceManager prisonerInfoPanel;
 	public Question_Timer questionTimer;
+	public Texture replaceTexture;
 
 	public bool enabled;
 
@@ -74,6 +75,7 @@ public class InterfaceManager : MonoBehaviour {
 				if (GetComponent<GUI_Button>().clicked) {
 					GameManager.instance.prisonerInfoPanel = this.prisonerInfoPanel;
 					questionTimer.StartTimer ();
+					GetComponentInChildren<GUITexture>().texture = replaceTexture;
 				}
 				break;
 			case MMIconType.Instruction:

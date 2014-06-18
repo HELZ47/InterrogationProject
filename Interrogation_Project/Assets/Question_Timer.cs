@@ -17,13 +17,15 @@ public class Question_Timer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (timerCounting) {
-			print ("Timer working!");
 			timer -= Time.deltaTime;
 		}
-		bigTimer.text = smallTimer.text = timer.ToString("F2");
+		bigTimer.text = smallTimer.text = ((int)(timer/60)).ToString() + ":" + (timer%60).ToString("F0");
+		smallTimer.enabled = timerCounting;
+		bigTimer.enabled = (GameManager.instance.prisonerInfoPanel == GameObject.Find ("img_StartQuestion_Instructions").GetComponent<InterfaceManager>());
 	}
 
 	public void StartTimer () {
+		//bigTimer.enabled = smallTimer.enabled = true;
 		timerCounting = true;
 	}
 

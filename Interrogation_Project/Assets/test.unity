@@ -189,6 +189,7 @@ MonoBehaviour:
   mmIconType: 3
   prisonerInfoPanel: {fileID: 0}
   questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
   enabled: 0
 --- !u!114 &111866807
 MonoBehaviour:
@@ -210,7 +211,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 111866805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .289999992, y: .449999988, z: 0}
+  m_LocalPosition: {x: .289999992, y: .5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1764983705}
@@ -302,6 +303,7 @@ MonoBehaviour:
   mmIconType: 2
   prisonerInfoPanel: {fileID: 737011046}
   questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
   enabled: 0
 --- !u!114 &193206646
 MonoBehaviour:
@@ -361,6 +363,7 @@ MonoBehaviour:
   mmIconType: 1
   prisonerInfoPanel: {fileID: 111866806}
   questionTimer: {fileID: 1487853473}
+  replaceTexture: {fileID: 2800000, guid: 77f957bfa63bfed4b82cf8ee07e68bed, type: 3}
   enabled: 0
 --- !u!114 &221591863
 MonoBehaviour:
@@ -420,6 +423,7 @@ MonoBehaviour:
   mmIconType: 0
   prisonerInfoPanel: {fileID: 0}
   questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
   enabled: 0
 --- !u!114 &278776407
 MonoBehaviour:
@@ -560,6 +564,7 @@ MonoBehaviour:
   mmIconType: 3
   prisonerInfoPanel: {fileID: 0}
   questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
   enabled: 0
 --- !u!114 &473621717
 MonoBehaviour:
@@ -679,6 +684,7 @@ MonoBehaviour:
   mmIconType: 3
   prisonerInfoPanel: {fileID: 0}
   questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
   enabled: 0
 --- !u!114 &737011047
 MonoBehaviour:
@@ -738,6 +744,7 @@ MonoBehaviour:
   mmIconType: 3
   prisonerInfoPanel: {fileID: 0}
   questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
   enabled: 0
 --- !u!114 &772916751
 MonoBehaviour:
@@ -904,6 +911,7 @@ MonoBehaviour:
   mmIconType: 0
   prisonerInfoPanel: {fileID: 0}
   questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
   enabled: 0
 --- !u!1 &1134701940
 GameObject:
@@ -997,6 +1005,7 @@ MonoBehaviour:
   mmIconType: 2
   prisonerInfoPanel: {fileID: 772916750}
   questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
   enabled: 0
 --- !u!114 &1259136237
 MonoBehaviour:
@@ -1056,6 +1065,7 @@ MonoBehaviour:
   mmIconType: 0
   prisonerInfoPanel: {fileID: 0}
   questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
   enabled: 0
 --- !u!114 &1269395220
 MonoBehaviour:
@@ -1208,7 +1218,7 @@ MonoBehaviour:
   bigTimer: {fileID: 2017677338}
   smallTimer: {fileID: 108369389}
   timer: 0
-  timeLimit: 3
+  timeLimit: 180
   timerCounting: 0
 --- !u!1 &1520971759
 GameObject:
@@ -1299,6 +1309,7 @@ MonoBehaviour:
   mmIconType: 0
   prisonerInfoPanel: {fileID: 0}
   questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
   enabled: 0
 --- !u!1 &1664406061
 GameObject:
@@ -1439,6 +1450,7 @@ MonoBehaviour:
   mmIconType: 3
   prisonerInfoPanel: {fileID: 0}
   questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
   enabled: 0
 --- !u!114 &1788350972
 MonoBehaviour:
@@ -1673,6 +1685,7 @@ MonoBehaviour:
   mmIconType: 2
   prisonerInfoPanel: {fileID: 2034344321}
   questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
   enabled: 0
 --- !u!114 &2012046117
 MonoBehaviour:
@@ -1723,7 +1736,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2017677336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .275000006, y: .25, z: 5}
+  m_LocalPosition: {x: .275000006, y: .300000012, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1487853472}
@@ -1744,7 +1757,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
-  m_FontSize: 20
+  m_FontSize: 25
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -1783,6 +1796,7 @@ MonoBehaviour:
   mmIconType: 3
   prisonerInfoPanel: {fileID: 0}
   questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
   enabled: 0
 --- !u!114 &2034344322
 MonoBehaviour:
@@ -1936,6 +1950,7 @@ MonoBehaviour:
   mmIconType: 2
   prisonerInfoPanel: {fileID: 1788350971}
   questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
   enabled: 0
 --- !u!114 &2073960495
 MonoBehaviour:
