@@ -31,20 +31,37 @@ public class DataFieldManager : MonoBehaviour {
 		float yOffset = 0.1f;
 		float zPos = 1.0f;		//In case we want to do z-ordering
 		*/
-		
+
+		/*
+		 * Josh settings
 		float rectRightInset = 250f;
 		float rectY = 245f;
 		float rectWidth = 135f;
 		float rectHeight = 50f;
 		float rectXOffset = 6f;
 		float rectYOffset = 72f;
-		
+		int textSize = 10;
+		*/
+
+		/*
+		 * Pierre settings
+		 */
+		float rectRightInset = 205f;
+		float rectY = 195f;
+		float rectWidth = 105f;
+		float rectHeight = 50f;
+		float rectXOffset = 6f;
+		float rectYOffset = 52f;
+		int textSize = 9;
+
 		for (int i = 0; i < 4; i++) {
 			placeObjects[i].GetComponent<DataField>().type = DataField.DataFieldType.PlaceField;
 			placeObjects[i].GetComponent<DataField>().text.text = placeStrings[i];
 			placeObjects[i].GetComponent<DataField>().buttonRect = new Rect (
 				Screen.width - rectRightInset - (rectWidth+rectXOffset)*i, rectY + (rectHeight+rectYOffset)*0, rectWidth, rectHeight);
 //			placeObjects[i].transform.position = new Vector3 (xPos + xOffset*i, yPos, zPos);
+			placeObjects[i].GetComponent<DataField>().unselectedStyle.fontSize = textSize;
+			placeObjects[i].GetComponent<DataField>().selectedStyle.fontSize = textSize;
 			placeObjects[i].GetComponent<DataField>().text.enabled = false;
 			
 			timeObjects[i].GetComponent<DataField>().type = DataField.DataFieldType.TimeField;
@@ -52,6 +69,8 @@ public class DataFieldManager : MonoBehaviour {
 			timeObjects[i].GetComponent<DataField>().buttonRect = new Rect (
 				Screen.width - rectRightInset - (rectWidth+rectXOffset)*i, rectY + (rectHeight+rectYOffset)*1, rectWidth, rectHeight);
 //			timeObjects[i].transform.position = new Vector3 (xPos + xOffset*i, yPos + yOffset*1, zPos);
+			timeObjects[i].GetComponent<DataField>().unselectedStyle.fontSize = textSize;
+			timeObjects[i].GetComponent<DataField>().selectedStyle.fontSize = textSize;
 			timeObjects[i].GetComponent<DataField>().text.enabled = false;
 			
 			peopleObjects[i].GetComponent<DataField>().type = DataField.DataFieldType.PersonField;
@@ -59,6 +78,8 @@ public class DataFieldManager : MonoBehaviour {
 			peopleObjects[i].GetComponent<DataField>().buttonRect = new Rect (
 				Screen.width - rectRightInset - (rectWidth+rectXOffset)*i, rectY + (rectHeight+rectYOffset)*2, rectWidth, rectHeight);
 //			peopleObjects[i].transform.position = new Vector3 (xPos + xOffset*i, yPos + yOffset*2, zPos);
+			peopleObjects[i].GetComponent<DataField>().unselectedStyle.fontSize = textSize;
+			peopleObjects[i].GetComponent<DataField>().selectedStyle.fontSize = textSize;
 			peopleObjects[i].GetComponent<DataField>().text.enabled = false;
 			
 			meansObjects[i].GetComponent<DataField>().type = DataField.DataFieldType.MeansField;
@@ -66,6 +87,8 @@ public class DataFieldManager : MonoBehaviour {
 			meansObjects[i].GetComponent<DataField>().buttonRect = new Rect (
 				Screen.width - rectRightInset - (rectWidth+rectXOffset)*i, rectY + (rectHeight+rectYOffset)*3, rectWidth, rectHeight);
 			//			meansObjects[i].transform.position = new Vector3 (xPos + xOffset*i, yPos + yOffset*3, zPos);
+			meansObjects[i].GetComponent<DataField>().selectedStyle.fontSize = textSize;
+			meansObjects[i].GetComponent<DataField>().unselectedStyle.fontSize = textSize;
 			meansObjects[i].GetComponent<DataField>().text.enabled = false;
 		}
 	}
