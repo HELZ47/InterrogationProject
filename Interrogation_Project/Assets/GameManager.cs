@@ -53,6 +53,8 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		print (_pInstance.convictedPrisoner1);
+		print (_pInstance.convictedPrisoner2);
 		//print (_pInstance.ldQuestionType.ToString () + " " + _pInstance.pickedPrisoner + " " + _pInstance.answerNumber + " " + _pInstance.tellingTruth);
 		switch (_pInstance.gameState) {
 		case GameState.Startup:

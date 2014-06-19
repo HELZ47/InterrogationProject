@@ -648,7 +648,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1935213519}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2010122055}
 --- !u!114 &194330352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,6 +667,9 @@ MonoBehaviour:
   correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
   convictionType: 2
   prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
 --- !u!114 &194330353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1000,6 +1003,9 @@ MonoBehaviour:
   correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
   convictionType: 0
   prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
 --- !u!114 &260966532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1048,7 +1054,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 919790674}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2010122055}
 --- !u!1 &261528081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1958,6 +1964,52 @@ Transform:
   m_LocalScale: {x: .5, y: .829999983, z: 1}
   m_Children: []
   m_Father: {fileID: 1269395218}
+--- !u!1 &426716404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 426716406}
+  - 131: {fileID: 426716405}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &426716405
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 426716404}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2b8984e73a623654e85fc0d3bee62e94, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &426716406
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 426716404}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .300000012, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 988412265}
 --- !u!1 &443450121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,6 +2039,52 @@ Transform:
   - {fileID: 1269395218}
   - {fileID: 1507227840}
   m_Father: {fileID: 0}
+--- !u!1 &448860120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 448860121}
+  - 131: {fileID: 448860122}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &448860121
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 448860120}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .170000002, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1788746752}
+--- !u!131 &448860122
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 448860120}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2b8984e73a623654e85fc0d3bee62e94, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &473487833
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,6 +2421,52 @@ Transform:
   m_LocalScale: {x: .400000006, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 1076901950}
+--- !u!1 &499901756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 499901757}
+  - 131: {fileID: 499901758}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &499901757
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499901756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .170000002, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 675211714}
+--- !u!131 &499901758
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499901756}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2b8984e73a623654e85fc0d3bee62e94, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &517261073
 GameObject:
   m_ObjectHideFlags: 0
@@ -2609,6 +2753,9 @@ MonoBehaviour:
   correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
   convictionType: 0
   prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
 --- !u!114 &575533270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2790,6 +2937,9 @@ MonoBehaviour:
   correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
   convictionType: 0
   prisonerType: 3
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
 --- !u!114 &619272973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2838,7 +2988,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1239883794}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2010122055}
 --- !u!1 &624394523
 GameObject:
   m_ObjectHideFlags: 0
@@ -3063,6 +3213,274 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTexture: {fileID: 1499687403}
   clicked: 0
+--- !u!1 &675211713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 675211714}
+  - 114: {fileID: 675211717}
+  - 114: {fileID: 675211716}
+  - 114: {fileID: 675211715}
+  m_Layer: 0
+  m_Name: img_Prisoner_Reveal1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &675211714
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 675211713}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .790000021, y: .680000007, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 499901757}
+  m_Father: {fileID: 767316830}
+--- !u!114 &675211715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 675211713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a089daeec4b07438fcea52c7d07de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 5
+  dataManager: {fileID: 122849950}
+  enabled: 0
+  factType: 0
+  correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
+  convictionType: 0
+  prisonerType: 0
+  followUpType: 1
+  prisonerProfile: 0
+  prisonerRevealType: 0
+--- !u!114 &675211716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 675211713}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 3
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 0
+  answerNumber: 0
+  truthOrLie: 2
+  enabled: 0
+--- !u!114 &675211717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 675211713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 499901758}
+  clicked: 0
+--- !u!1 &696768715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 696768716}
+  - 114: {fileID: 696768719}
+  - 114: {fileID: 696768718}
+  - 114: {fileID: 696768717}
+  m_Layer: 0
+  m_Name: img_Prisoner_Reveal3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &696768716
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 696768715}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .790000021, y: .409999996, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 715600909}
+  m_Father: {fileID: 767316830}
+--- !u!114 &696768717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 696768715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a089daeec4b07438fcea52c7d07de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 5
+  dataManager: {fileID: 122849950}
+  enabled: 0
+  factType: 0
+  correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
+  convictionType: 0
+  prisonerType: 0
+  followUpType: 1
+  prisonerProfile: 0
+  prisonerRevealType: 2
+--- !u!114 &696768718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 696768715}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 3
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 0
+  answerNumber: 0
+  truthOrLie: 2
+  enabled: 0
+--- !u!114 &696768719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 696768715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 715600910}
+  clicked: 0
+--- !u!1 &715600908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 715600909}
+  - 131: {fileID: 715600910}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &715600909
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 715600908}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .170000002, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 696768716}
+--- !u!131 &715600910
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 715600908}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2b8984e73a623654e85fc0d3bee62e94, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!1 &722272698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 722272699}
+  - 131: {fileID: 722272700}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &722272699
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 722272698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .300000012, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 949668199}
+--- !u!131 &722272700
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 722272698}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2b8984e73a623654e85fc0d3bee62e94, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &737011044
 GameObject:
   m_ObjectHideFlags: 0
@@ -3219,10 +3637,18 @@ Transform:
   - {fileID: 902701078}
   - {fileID: 1869213214}
   - {fileID: 575533272}
+  - {fileID: 675211714}
   - {fileID: 1304152489}
   - {fileID: 1565400214}
   - {fileID: 1122958805}
   - {fileID: 2032222833}
+  - {fileID: 2101921768}
+  - {fileID: 696768716}
+  - {fileID: 1788746752}
+  - {fileID: 949668199}
+  - {fileID: 1860514547}
+  - {fileID: 882104536}
+  - {fileID: 988412265}
   m_Father: {fileID: 0}
 --- !u!1 &768997585
 GameObject:
@@ -3707,6 +4133,94 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!1 &882104535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 882104536}
+  - 114: {fileID: 882104539}
+  - 114: {fileID: 882104538}
+  - 114: {fileID: 882104537}
+  m_Layer: 0
+  m_Name: img_PrisonerInfo3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &882104536
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882104535}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .720000029, y: .460000008, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1583019888}
+  m_Father: {fileID: 767316830}
+--- !u!114 &882104537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882104535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a089daeec4b07438fcea52c7d07de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 5
+  dataManager: {fileID: 122849950}
+  enabled: 0
+  factType: 1
+  correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
+  convictionType: 0
+  prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 2
+  prisonerRevealType: 2
+--- !u!114 &882104538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882104535}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 3
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 0
+  answerNumber: 0
+  truthOrLie: 2
+  enabled: 0
+--- !u!114 &882104539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882104535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 1583019889}
+  clicked: 0
 --- !u!1 &902701075
 GameObject:
   m_ObjectHideFlags: 0
@@ -3792,6 +4306,9 @@ MonoBehaviour:
   correctTexture: {fileID: 0}
   convictionType: 0
   prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
 --- !u!1 &914670800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3980,6 +4497,182 @@ Transform:
   - {fileID: 488461357}
   - {fileID: 1112615540}
   m_Father: {fileID: 248579596}
+--- !u!1 &949668198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 949668199}
+  - 114: {fileID: 949668202}
+  - 114: {fileID: 949668201}
+  - 114: {fileID: 949668200}
+  m_Layer: 0
+  m_Name: img_PrisonerInfo1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &949668199
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 949668198}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .720000029, y: .74000001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 722272699}
+  m_Father: {fileID: 767316830}
+--- !u!114 &949668200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 949668198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a089daeec4b07438fcea52c7d07de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 5
+  dataManager: {fileID: 122849950}
+  enabled: 0
+  factType: 1
+  correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
+  convictionType: 0
+  prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
+--- !u!114 &949668201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 949668198}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 3
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 0
+  answerNumber: 0
+  truthOrLie: 2
+  enabled: 0
+--- !u!114 &949668202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 949668198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 722272700}
+  clicked: 0
+--- !u!1 &988412261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 988412265}
+  - 114: {fileID: 988412264}
+  - 114: {fileID: 988412263}
+  - 114: {fileID: 988412262}
+  m_Layer: 0
+  m_Name: img_PrisonerInfo4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &988412262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 988412261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a089daeec4b07438fcea52c7d07de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 5
+  dataManager: {fileID: 122849950}
+  enabled: 0
+  factType: 1
+  correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
+  convictionType: 0
+  prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 3
+  prisonerRevealType: 3
+--- !u!114 &988412263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 988412261}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 3
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 0
+  answerNumber: 0
+  truthOrLie: 2
+  enabled: 0
+--- !u!114 &988412264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 988412261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 426716405}
+  clicked: 0
+--- !u!4 &988412265
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 988412261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .720000029, y: .330000013, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 426716406}
+  m_Father: {fileID: 767316830}
 --- !u!1 &994903553
 GameObject:
   m_ObjectHideFlags: 0
@@ -4015,6 +4708,52 @@ GUITexture:
   m_GameObject: {fileID: 994903553}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!1 &1001045484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1001045485}
+  - 131: {fileID: 1001045486}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1001045485
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1001045484}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .170000002, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2101921768}
+--- !u!131 &1001045486
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1001045484}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2b8984e73a623654e85fc0d3bee62e94, type: 3}
   m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
   m_PixelInset:
     serializedVersion: 2
@@ -4072,6 +4811,52 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 278776405}
+--- !u!1 &1039904933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1039904934}
+  - 131: {fileID: 1039904935}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1039904934
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039904933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .300000012, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1860514547}
+--- !u!131 &1039904935
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039904933}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2b8984e73a623654e85fc0d3bee62e94, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &1051251509
 GameObject:
   m_ObjectHideFlags: 0
@@ -4319,7 +5104,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 852251586}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2010122055}
 --- !u!114 &1081929134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4338,6 +5123,9 @@ MonoBehaviour:
   correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
   convictionType: 0
   prisonerType: 2
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
 --- !u!114 &1081929135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4903,6 +5691,9 @@ MonoBehaviour:
   correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
   convictionType: 0
   prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
 --- !u!114 &1122958803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5529,6 +6320,9 @@ MonoBehaviour:
   correctTexture: {fileID: 0}
   convictionType: 0
   prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
 --- !u!114 &1252951412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6206,6 +7000,9 @@ MonoBehaviour:
   correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
   convictionType: 0
   prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
 --- !u!114 &1304152487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8141,6 +8938,9 @@ MonoBehaviour:
   correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
   convictionType: 0
   prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
 --- !u!114 &1565400216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8244,6 +9044,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTexture: {fileID: 1431879642}
   clicked: 0
+--- !u!1 &1583019887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1583019888}
+  - 131: {fileID: 1583019889}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1583019888
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1583019887}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .300000012, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 882104536}
+--- !u!131 &1583019889
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1583019887}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2b8984e73a623654e85fc0d3bee62e94, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &1608596159
 GameObject:
   m_ObjectHideFlags: 0
@@ -8365,7 +9211,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 365058194}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2010122055}
 --- !u!114 &1632709501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8384,6 +9230,9 @@ MonoBehaviour:
   correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
   convictionType: 1
   prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
 --- !u!114 &1632709502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9199,6 +10048,9 @@ MonoBehaviour:
   correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
   convictionType: 0
   prisonerType: 1
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
 --- !u!114 &1724971291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9247,7 +10099,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 554029222}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2010122055}
 --- !u!1 &1729594069
 GameObject:
   m_ObjectHideFlags: 0
@@ -9498,6 +10350,94 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTexture: {fileID: 2067800148}
   clicked: 0
+--- !u!1 &1788746751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1788746752}
+  - 114: {fileID: 1788746755}
+  - 114: {fileID: 1788746754}
+  - 114: {fileID: 1788746753}
+  m_Layer: 0
+  m_Name: img_Prisoner_Reveal4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1788746752
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788746751}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .790000021, y: .270000011, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 448860121}
+  m_Father: {fileID: 767316830}
+--- !u!114 &1788746753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788746751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a089daeec4b07438fcea52c7d07de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 5
+  dataManager: {fileID: 122849950}
+  enabled: 0
+  factType: 0
+  correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
+  convictionType: 0
+  prisonerType: 0
+  followUpType: 1
+  prisonerProfile: 0
+  prisonerRevealType: 3
+--- !u!114 &1788746754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788746751}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 3
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 0
+  answerNumber: 0
+  truthOrLie: 2
+  enabled: 0
+--- !u!114 &1788746755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788746751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 448860122}
+  clicked: 0
 --- !u!1 &1797001645
 GameObject:
   m_ObjectHideFlags: 0
@@ -9590,6 +10530,94 @@ Transform:
   m_LocalScale: {x: .409999996, y: .850000024, z: 1}
   m_Children: []
   m_Father: {fileID: 1507227840}
+--- !u!1 &1860514546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1860514547}
+  - 114: {fileID: 1860514550}
+  - 114: {fileID: 1860514549}
+  - 114: {fileID: 1860514548}
+  m_Layer: 0
+  m_Name: img_PrisonerInfo2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1860514547
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1860514546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .720000029, y: .620000005, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1039904934}
+  m_Father: {fileID: 767316830}
+--- !u!114 &1860514548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1860514546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a089daeec4b07438fcea52c7d07de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 5
+  dataManager: {fileID: 122849950}
+  enabled: 0
+  factType: 1
+  correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
+  convictionType: 0
+  prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 1
+  prisonerRevealType: 1
+--- !u!114 &1860514549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1860514546}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 3
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 0
+  answerNumber: 0
+  truthOrLie: 2
+  enabled: 0
+--- !u!114 &1860514550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1860514546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 1039904935}
+  clicked: 0
 --- !u!1 &1869213213
 GameObject:
   m_ObjectHideFlags: 0
@@ -9675,6 +10703,9 @@ MonoBehaviour:
   correctTexture: {fileID: 0}
   convictionType: 0
   prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
 --- !u!1 &1872792555
 GameObject:
   m_ObjectHideFlags: 0
@@ -10354,6 +11385,38 @@ Transform:
   - {fileID: 1582273420}
   - {fileID: 1469915253}
   m_Father: {fileID: 248579596}
+--- !u!1 &2010122054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2010122055}
+  m_Layer: 0
+  m_Name: gr_Conviction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2010122055
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2010122054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 194330351}
+  - {fileID: 260966534}
+  - {fileID: 1724971293}
+  - {fileID: 1081929133}
+  - {fileID: 619272975}
+  - {fileID: 1632709500}
+  m_Father: {fileID: 0}
 --- !u!1 &2012046115
 GameObject:
   m_ObjectHideFlags: 0
@@ -10814,6 +11877,9 @@ MonoBehaviour:
   correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
   convictionType: 0
   prisonerType: 0
+  followUpType: 0
+  prisonerProfile: 0
+  prisonerRevealType: 0
 --- !u!1 &2034344320
 GameObject:
   m_ObjectHideFlags: 0
@@ -11429,6 +12495,94 @@ Transform:
   m_LocalScale: {x: .449999988, y: .25, z: 1}
   m_Children: []
   m_Father: {fileID: 1642190923}
+--- !u!1 &2101921767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2101921768}
+  - 114: {fileID: 2101921771}
+  - 114: {fileID: 2101921770}
+  - 114: {fileID: 2101921769}
+  m_Layer: 0
+  m_Name: img_Prisoner_Reveal2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2101921768
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2101921767}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .790000021, y: .560000002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1001045485}
+  m_Father: {fileID: 767316830}
+--- !u!114 &2101921769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2101921767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a089daeec4b07438fcea52c7d07de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 5
+  dataManager: {fileID: 122849950}
+  enabled: 0
+  factType: 0
+  correctTexture: {fileID: 2800000, guid: 96e1a0345d3ecd148a9d6d85cef68f73, type: 3}
+  convictionType: 0
+  prisonerType: 0
+  followUpType: 1
+  prisonerProfile: 0
+  prisonerRevealType: 1
+--- !u!114 &2101921770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2101921767}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 3
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 0
+  answerNumber: 0
+  truthOrLie: 2
+  enabled: 0
+--- !u!114 &2101921771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2101921767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 1001045486}
+  clicked: 0
 --- !u!1 &2128109925
 GameObject:
   m_ObjectHideFlags: 0
