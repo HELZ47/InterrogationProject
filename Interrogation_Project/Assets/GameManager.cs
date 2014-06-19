@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
 	public float startUpTimer;
 	public bool startUpTimerStarted;
 
-	public enum GameState {Startup, MainMenu, LieDetector, EndGame }
+	public enum GameState {Startup, MainMenu, LieDetector, EndGame, Conviction }
 	public GameState gameState;
 
 	public InterfaceManager prisonerInfoPanel;
@@ -34,6 +34,10 @@ public class GameManager : MonoBehaviour {
 	public AnswerNumber answerNumber;
 
 	public bool tellingTruth;
+	
+	public enum ConvictedPrisoner { None, P_1, P_2, P_3, P_4 }
+	public ConvictedPrisoner convictedPrisoner1;
+	public ConvictedPrisoner convictedPrisoner2;
 
 	//Wake function
 	void Awake () {

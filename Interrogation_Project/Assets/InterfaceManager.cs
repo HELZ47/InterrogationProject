@@ -60,8 +60,13 @@ public class InterfaceManager : MonoBehaviour {
 			LieDetectorInterface ();
 			break;
 		case InterfaceType.Background:
-			if (GameManager.instance.gameState != GameManager.GameState.Startup) {
+			if (GameManager.instance.gameState != GameManager.GameState.Startup
+				&& GameManager.instance.gameState != GameManager.GameState.EndGame
+			    && GameManager.instance.gameState != GameManager.GameState.Conviction) {
 				enabled = true;
+			}
+			else {
+				enabled = false;
 			}
 			break;
 		}
