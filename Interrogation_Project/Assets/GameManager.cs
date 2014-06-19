@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
 	public float startUpTimer;
 	public bool startUpTimerStarted;
 
-	public enum GameState {Startup, MainMenu, LieDetector }
+	public enum GameState {Startup, MainMenu, LieDetector, EndGame }
 	public GameState gameState;
 
 	public InterfaceManager prisonerInfoPanel;

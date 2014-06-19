@@ -1,0 +1,12 @@
+diff a/Interrogation_Project/Assets/test.unity b/Interrogation_Project/Assets/test.unity	(rejected hunks)
+@@ -945,6 +945,10 @@
+    - {fileID: 847403116}
+    - {fileID: 649752508}
+    m_Father: {fileID: 0}
+++<<<<<<< HEAD
+++=======
++   m_RootOrder: 8
+++>>>>>>> parent of e022799... Lie detector fully implemented
+  --- !u!1 &332282258
+  GameObject:
+    m_ObjectHideFlags: 0

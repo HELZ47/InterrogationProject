@@ -33,11 +33,11 @@ public class DataFieldManager : MonoBehaviour {
 		*/
 		
 		float rectRightInset = 250f;
-		float rectY = 150f;
-		float rectWidth = 140f;
-		float rectHeight = 100f;
-		float rectXOffset = 10f;
-		float rectYOffset = 20f;
+		float rectY = 245f;
+		float rectWidth = 135f;
+		float rectHeight = 50f;
+		float rectXOffset = 6f;
+		float rectYOffset = 72f;
 		
 		for (int i = 0; i < 4; i++) {
 			placeObjects[i].GetComponent<DataField>().type = DataField.DataFieldType.PlaceField;
@@ -116,5 +116,33 @@ public class DataFieldManager : MonoBehaviour {
 				timeObjects[rightAnswers[1]].GetComponent<DataField>().selected && 
 				peopleObjects[rightAnswers[2]].GetComponent<DataField>().selected && 
 				meansObjects[rightAnswers[3]].GetComponent<DataField>().selected; 
+	}
+	
+	public bool AllSelected () {
+		bool placeSelected = false;
+		bool timeSelected = false;
+		bool personSelected = false;
+		bool meansSelected = false;
+		foreach (GameObject o in placeObjects) {
+			if (o.GetComponent<DataField>().selected) {
+				placeSelected = true;
+			}
+		}
+		foreach (GameObject o in timeObjects) {
+			if (o.GetComponent<DataField>().selected) {
+				timeSelected = true;
+			}
+		}
+		foreach (GameObject o in peopleObjects) {
+			if (o.GetComponent<DataField>().selected) {
+				personSelected = true;
+			}
+		}
+		foreach (GameObject o in meansObjects) {
+			if (o.GetComponent<DataField>().selected) {
+				meansSelected = true;
+			}
+		}
+		return placeSelected && timeSelected && personSelected && meansSelected;
 	}
 }

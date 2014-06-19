@@ -49,6 +49,7 @@
      <Compile Include="Assets\Controller.cs" />
      <Compile Include="Assets\DataField.cs" />
      <Compile Include="Assets\DataFieldManager.cs" />
+     <Compile Include="Assets\End_Game_Interface.cs" />
      <Compile Include="Assets\GUI_Button.cs" />
      <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\InterfaceManager.cs" />
