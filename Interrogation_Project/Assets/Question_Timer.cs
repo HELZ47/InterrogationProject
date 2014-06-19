@@ -19,10 +19,10 @@ public class Question_Timer : MonoBehaviour {
 		if (timerCounting) {
 			timer -= Time.deltaTime;
 		}
-		bigTimer.text = smallTimer.text = ((int)(timer/60)).ToString() + ":" + (timer%60).ToString("F0");
+		bigTimer.text = smallTimer.text = ((int)(timer/60)).ToString() + ":" + (timer%60<10?"0":"") + Mathf.Floor((timer%60)).ToString("F0");//(timer%60).ToString("F0");
 
 		if (GameManager.instance.gameState == GameManager.GameState.MainMenu) {
-			smallTimer.enabled = timerCounting;
+			smallTimer.enabled = timerCounting && !(GameManager.instance.prisonerInfoPanel == GameObject.Find ("img_StartQuestion_Instructions").GetComponent<InterfaceManager>());;
 			bigTimer.enabled = (GameManager.instance.prisonerInfoPanel == GameObject.Find ("img_StartQuestion_Instructions").GetComponent<InterfaceManager>());
 		}
 		else {

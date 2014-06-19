@@ -112,7 +112,7 @@ public class InterfaceManager : MonoBehaviour {
 					    questionTimer.StartTimer ();
 					    GetComponentInChildren<GUITexture>().texture = replaceTexture;
 					}
-					else if (GetComponentInChildren<GUITexture>().texture == replaceTexture) {
+					else if (GetComponentInChildren<GUITexture>().texture == replaceTexture && GameManager.instance.lieDetectorUsedTimes < 4) {
 						GameManager.instance.gameState = GameManager.GameState.LieDetector;
 						GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Formulated_Question;
 					}
@@ -371,6 +371,8 @@ public class InterfaceManager : MonoBehaviour {
 						enabled = true;
 						if (enabled && GetComponentInChildren<GUI_Button>().clicked) {
 							GameManager.instance.gameState = GameManager.GameState.MainMenu;
+							GameManager.instance.lieDetectorUsedTimes++;
+							print ("LD used " + GameManager.instance.lieDetectorUsedTimes);
 							print ("timer reset!");
 							GameManager.instance.questionTimer.ResetTimer();
 							GameManager.instance.questionTimer.StartTimer();
