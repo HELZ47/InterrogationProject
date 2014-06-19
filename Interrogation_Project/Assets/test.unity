@@ -105,6 +105,53 @@ Transform:
   - {fileID: 1348021585}
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!1 &47756634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 47756636}
+  - 131: {fileID: 47756635}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &47756635
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 47756634}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &47756636
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 47756634}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .0700000003, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 487629483}
+  m_RootOrder: 0
 --- !u!1 &71316516
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,6 +270,10 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &111866807
 MonoBehaviour:
@@ -294,6 +345,9 @@ MonoBehaviour:
   questionTimer: {fileID: 1487853473}
   lieDetectorState: 0
   ldQuestionType: 0
+  pickedPrisoner: 0
+  answerType: 0
+  answerNumber: 0
 --- !u!1 &152613281
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,6 +395,53 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!1 &191504050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 191504052}
+  - 131: {fileID: 191504051}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &191504051
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 191504050}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &191504052
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 191504050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2128109928}
+  m_RootOrder: 0
 --- !u!1 &193206643
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +490,10 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &193206646
 MonoBehaviour:
@@ -402,6 +507,72 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainTexture: {fileID: 1051251510}
+  clicked: 0
+--- !u!1 &212787556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 212787557}
+  - 114: {fileID: 212787559}
+  - 114: {fileID: 212787558}
+  m_Layer: 0
+  m_Name: img_SelectedWhen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &212787557
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 212787556}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .109999999, y: .769999981, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 866870907}
+  m_Father: {fileID: 594268274}
+  m_RootOrder: 0
+--- !u!114 &212787558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 212787556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 1
+  questionType: 0
+  smallQuestionType: 3
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
+  enabled: 0
+--- !u!114 &212787559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 212787556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 866870908}
   clicked: 0
 --- !u!1 &221591860
 GameObject:
@@ -451,6 +622,10 @@ MonoBehaviour:
   replaceTexture: {fileID: 2800000, guid: 77f957bfa63bfed4b82cf8ee07e68bed, type: 3}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &221591863
 MonoBehaviour:
@@ -464,6 +639,185 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainTexture: {fileID: 1134701942}
+  clicked: 0
+--- !u!1 &247623571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 247623572}
+  - 131: {fileID: 247623573}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &247623572
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 247623571}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 609737092}
+  m_RootOrder: 0
+--- !u!131 &247623573
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 247623571}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!1 &261528081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 261528082}
+  - 114: {fileID: 261528084}
+  - 114: {fileID: 261528083}
+  m_Layer: 0
+  m_Name: img_WhoAnswer1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &261528082
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 261528081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .660000026, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1634242388}
+  m_Father: {fileID: 1333083748}
+  m_RootOrder: 0
+--- !u!114 &261528083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 261528081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 1
+  answerNumber: 0
+  enabled: 0
+--- !u!114 &261528084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 261528081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 1634242389}
+  clicked: 0
+--- !u!1 &264584688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 264584689}
+  - 114: {fileID: 264584691}
+  - 114: {fileID: 264584690}
+  m_Layer: 0
+  m_Name: img_SelectedWhere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &264584689
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264584688}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .109999999, y: .439999998, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 659120604}
+  m_Father: {fileID: 594268274}
+  m_RootOrder: 2
+--- !u!114 &264584690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264584688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 1
+  questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
+  enabled: 0
+--- !u!114 &264584691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 264584688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 659120605}
   clicked: 0
 --- !u!1 &278776404
 GameObject:
@@ -513,6 +867,10 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &278776407
 MonoBehaviour:
@@ -527,6 +885,181 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTexture: {fileID: 1034697216}
   clicked: 0
+--- !u!1 &303897187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 303897188}
+  m_Layer: 0
+  m_Name: gr_Where_Answers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &303897188
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 303897187}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1051983010}
+  - {fileID: 2128109928}
+  - {fileID: 847403116}
+  - {fileID: 649752508}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+--- !u!1 &332282258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 332282260}
+  - 131: {fileID: 332282259}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &332282259
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332282258}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &332282260
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332282258}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 649752508}
+  m_RootOrder: 0
+--- !u!1 &371369821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 371369822}
+  - 114: {fileID: 371369824}
+  - 114: {fileID: 371369823}
+  m_Layer: 0
+  m_Name: img_HowAnswer1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &371369822
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 371369821}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .660000026, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1755497155}
+  m_Father: {fileID: 946200863}
+  m_RootOrder: 0
+--- !u!114 &371369823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 371369821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 2
+  answerNumber: 0
+  enabled: 0
+--- !u!114 &371369824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 371369821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 1755497156}
+  clicked: 0
+--- !u!1 &380156264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 380156265}
+  m_Layer: 0
+  m_Name: gr_When_Answers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &380156265
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 380156264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 937506164}
+  - {fileID: 609737092}
+  - {fileID: 659331705}
+  - {fileID: 1308135015}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
 --- !u!1 &417152315
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +1106,53 @@ Transform:
   m_LocalScale: {x: .5, y: .649999976, z: 1}
   m_Children: []
   m_Father: {fileID: 2034344323}
+  m_RootOrder: 0
+--- !u!1 &419200367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 419200369}
+  - 131: {fileID: 419200368}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &419200368
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 419200367}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &419200369
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 419200367}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 488461357}
   m_RootOrder: 0
 --- !u!1 &426593559
 GameObject:
@@ -650,6 +1230,53 @@ Transform:
   - {fileID: 1269395218}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!1 &473487833
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 473487835}
+  - 131: {fileID: 473487834}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &473487834
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 473487833}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &473487835
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 473487833}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 847403116}
+  m_RootOrder: 0
 --- !u!1 &473621715
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +1312,10 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &473621717
 MonoBehaviour:
@@ -712,6 +1343,138 @@ Transform:
   - {fileID: 2137953899}
   m_Father: {fileID: 765276660}
   m_RootOrder: 0
+--- !u!1 &487629482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 487629483}
+  - 114: {fileID: 487629485}
+  - 114: {fileID: 487629484}
+  m_Layer: 0
+  m_Name: img_SelectedWho
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &487629483
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 487629482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .109999999, y: .600000024, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 47756636}
+  m_Father: {fileID: 594268274}
+  m_RootOrder: 1
+--- !u!114 &487629484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 487629482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 1
+  questionType: 0
+  smallQuestionType: 1
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
+  enabled: 0
+--- !u!114 &487629485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 487629482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 47756635}
+  clicked: 0
+--- !u!1 &488461356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 488461357}
+  - 114: {fileID: 488461359}
+  - 114: {fileID: 488461358}
+  m_Layer: 0
+  m_Name: img_HowAnswer3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &488461357
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 488461356}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .469999999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 419200369}
+  m_Father: {fileID: 946200863}
+  m_RootOrder: 2
+--- !u!114 &488461358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 488461356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 2
+  answerNumber: 2
+  enabled: 0
+--- !u!114 &488461359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 488461356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 419200368}
+  clicked: 0
 --- !u!1 &497858400
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +1522,489 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1076901950}
   m_RootOrder: 0
+--- !u!1 &517261073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 517261074}
+  - 131: {fileID: 517261075}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &517261074
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 517261073}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1112615540}
+  m_RootOrder: 0
+--- !u!131 &517261075
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 517261073}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!1 &542525033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 542525035}
+  - 131: {fileID: 542525034}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &542525034
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 542525033}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &542525035
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 542525033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .0700000003, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1202707990}
+  m_RootOrder: 0
+--- !u!1 &547048815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 547048816}
+  - 114: {fileID: 547048818}
+  - 114: {fileID: 547048817}
+  m_Layer: 0
+  m_Name: img_WhoAnswer2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &547048816
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547048815}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .569999993, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 768997586}
+  m_Father: {fileID: 1333083748}
+  m_RootOrder: 1
+--- !u!114 &547048817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547048815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 1
+  answerNumber: 1
+  enabled: 0
+--- !u!114 &547048818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 547048815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 768997587}
+  clicked: 0
+--- !u!1 &594268273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 594268274}
+  m_Layer: 0
+  m_Name: gr_Selected_Questions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &594268274
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 594268273}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 212787557}
+  - {fileID: 487629483}
+  - {fileID: 264584689}
+  - {fileID: 1683931940}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+--- !u!1 &609737091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 609737092}
+  - 114: {fileID: 609737094}
+  - 114: {fileID: 609737093}
+  m_Layer: 0
+  m_Name: img_WhenAnswer2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &609737092
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609737091}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .569999993, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 247623572}
+  m_Father: {fileID: 380156265}
+  m_RootOrder: 1
+--- !u!114 &609737093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609737091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 3
+  answerNumber: 1
+  enabled: 0
+--- !u!114 &609737094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 609737091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 247623573}
+  clicked: 0
+--- !u!1 &624394523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 624394525}
+  - 131: {fileID: 624394524}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &624394524
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 624394523}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &624394525
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 624394523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1308135015}
+  m_RootOrder: 0
+--- !u!1 &649752507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 649752508}
+  - 114: {fileID: 649752510}
+  - 114: {fileID: 649752509}
+  m_Layer: 0
+  m_Name: img_WhereAnswer4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &649752508
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 649752507}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .370000005, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 332282260}
+  m_Father: {fileID: 303897188}
+  m_RootOrder: 3
+--- !u!114 &649752509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 649752507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 0
+  answerNumber: 3
+  enabled: 0
+--- !u!114 &649752510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 649752507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 332282259}
+  clicked: 0
+--- !u!1 &659120603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 659120604}
+  - 131: {fileID: 659120605}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &659120604
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 659120603}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .0700000003, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 264584689}
+  m_RootOrder: 0
+--- !u!131 &659120605
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 659120603}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!1 &659331704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 659331705}
+  - 114: {fileID: 659331707}
+  - 114: {fileID: 659331706}
+  m_Layer: 0
+  m_Name: img_WhenAnswer3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &659331705
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 659331704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .469999999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1499687402}
+  m_Father: {fileID: 380156265}
+  m_RootOrder: 2
+--- !u!114 &659331706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 659331704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 3
+  answerNumber: 2
+  enabled: 0
+--- !u!114 &659331707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 659331704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 1499687403}
+  clicked: 0
 --- !u!1 &737011044
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +2053,10 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &737011047
 MonoBehaviour:
@@ -853,6 +2103,53 @@ Transform:
   - {fileID: 1487853472}
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!1 &768997585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 768997586}
+  - 131: {fileID: 768997587}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &768997586
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768997585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 547048816}
+  m_RootOrder: 0
+--- !u!131 &768997587
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768997585}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &772916748
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,6 +2198,10 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &772916751
 MonoBehaviour:
@@ -915,6 +2216,263 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTexture: {fileID: 1909755773}
   clicked: 0
+--- !u!1 &847403113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 847403116}
+  - 114: {fileID: 847403115}
+  - 114: {fileID: 847403114}
+  m_Layer: 0
+  m_Name: img_WhereAnswer3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &847403114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 847403113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 0
+  answerNumber: 2
+  enabled: 0
+--- !u!114 &847403115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 847403113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 473487834}
+  clicked: 0
+--- !u!4 &847403116
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 847403113}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .469999999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 473487835}
+  m_Father: {fileID: 303897188}
+  m_RootOrder: 2
+--- !u!1 &866870906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 866870907}
+  - 131: {fileID: 866870908}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &866870907
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 866870906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .0700000003, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 212787557}
+  m_RootOrder: 0
+--- !u!131 &866870908
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 866870906}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!1 &914670800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 914670802}
+  - 131: {fileID: 914670801}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &914670801
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 914670800}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &914670802
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 914670800}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .0700000003, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1469915253}
+  m_RootOrder: 0
+--- !u!1 &937506163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 937506164}
+  - 114: {fileID: 937506166}
+  - 114: {fileID: 937506165}
+  m_Layer: 0
+  m_Name: img_WhenAnswer1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &937506164
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 937506163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .660000026, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1298420781}
+  m_Father: {fileID: 380156265}
+  m_RootOrder: 0
+--- !u!114 &937506165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 937506163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 3
+  answerNumber: 0
+  enabled: 0
+--- !u!114 &937506166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 937506163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 1298420782}
+  clicked: 0
+--- !u!1 &946200862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 946200863}
+  m_Layer: 0
+  m_Name: gr_How_Answers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &946200863
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 946200862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 371369822}
+  - {fileID: 2091418447}
+  - {fileID: 488461357}
+  - {fileID: 1112615540}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
 --- !u!1 &994903553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,6 +2614,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 193206644}
   m_RootOrder: 0
+--- !u!1 &1051983007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1051983010}
+  - 114: {fileID: 1051983009}
+  - 114: {fileID: 1051983008}
+  m_Layer: 0
+  m_Name: img_WhereAnswer1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1051983008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1051983007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 0
+  answerNumber: 0
+  enabled: 0
+--- !u!114 &1051983009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1051983007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 1797001646}
+  clicked: 0
+--- !u!4 &1051983010
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1051983007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .660000026, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1797001647}
+  m_Father: {fileID: 303897188}
+  m_RootOrder: 0
 --- !u!1 &1076901948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,7 +2741,77 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
+--- !u!1 &1112615539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1112615540}
+  - 114: {fileID: 1112615542}
+  - 114: {fileID: 1112615541}
+  m_Layer: 0
+  m_Name: img_HowAnswer4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1112615540
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1112615539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .370000005, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 517261074}
+  m_Father: {fileID: 946200863}
+  m_RootOrder: 3
+--- !u!114 &1112615541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1112615539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 2
+  answerNumber: 3
+  enabled: 0
+--- !u!114 &1112615542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1112615539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 517261075}
+  clicked: 0
 --- !u!1 &1134701940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,6 +2859,72 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!1 &1202707989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1202707990}
+  - 114: {fileID: 1202707992}
+  - 114: {fileID: 1202707991}
+  m_Layer: 0
+  m_Name: img_ChoosePrisoner1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1202707990
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1202707989}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .209999993, y: .779999971, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 542525035}
+  m_Father: {fileID: 2008885857}
+  m_RootOrder: 0
+--- !u!114 &1202707991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1202707989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 1
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
+  enabled: 0
+--- !u!114 &1202707992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1202707989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 542525034}
+  clicked: 0
 --- !u!1 &1208161607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,7 +2972,11 @@ MonoBehaviour:
   questionTimer: {fileID: 0}
   replaceTexture: {fileID: 0}
   ldIconType: 0
-  questionType: 0
+  questionType: 1
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &1208161610
 MonoBehaviour:
@@ -1227,6 +2991,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTexture: {fileID: 994903555}
   clicked: 0
+--- !u!1 &1230640369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1230640371}
+  - 131: {fileID: 1230640370}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &1230640370
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1230640369}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &1230640371
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1230640369}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .0700000003, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1316572139}
+  m_RootOrder: 0
 --- !u!1 &1259136234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,6 +3086,10 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &1259136237
 MonoBehaviour:
@@ -1337,6 +3152,10 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &1269395220
 MonoBehaviour:
@@ -1350,6 +3169,185 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainTexture: {fileID: 426593560}
+  clicked: 0
+--- !u!1 &1298420780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1298420781}
+  - 131: {fileID: 1298420782}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1298420781
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1298420780}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 937506164}
+  m_RootOrder: 0
+--- !u!131 &1298420782
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1298420780}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!1 &1308135014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1308135015}
+  - 114: {fileID: 1308135017}
+  - 114: {fileID: 1308135016}
+  m_Layer: 0
+  m_Name: img_WhenAnswer4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1308135015
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308135014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .370000005, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 624394525}
+  m_Father: {fileID: 380156265}
+  m_RootOrder: 3
+--- !u!114 &1308135016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308135014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 3
+  answerNumber: 3
+  enabled: 0
+--- !u!114 &1308135017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1308135014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 624394524}
+  clicked: 0
+--- !u!1 &1316572138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1316572139}
+  - 114: {fileID: 1316572141}
+  - 114: {fileID: 1316572140}
+  m_Layer: 0
+  m_Name: img_ChoosePrisoner2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1316572139
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316572138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .300000012, y: .779999971, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1230640371}
+  m_Father: {fileID: 2008885857}
+  m_RootOrder: 1
+--- !u!114 &1316572140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316572138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 1
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 1
+  answerType: 0
+  answerNumber: 0
+  enabled: 0
+--- !u!114 &1316572141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316572138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 1230640370}
   clicked: 0
 --- !u!1 &1328763157
 GameObject:
@@ -1398,6 +3396,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2073960496}
   m_RootOrder: 0
+--- !u!1 &1333083747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1333083748}
+  m_Layer: 0
+  m_Name: gr_Who_Answers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1333083748
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1333083747}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 261528082}
+  - {fileID: 547048816}
+  - {fileID: 1542935676}
+  - {fileID: 1442082464}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
 --- !u!1 &1348021584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,7 +3474,11 @@ MonoBehaviour:
   questionTimer: {fileID: 0}
   replaceTexture: {fileID: 0}
   ldIconType: 0
-  questionType: 0
+  questionType: 2
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &1348021587
 MonoBehaviour:
@@ -1507,6 +3540,185 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!1 &1431879641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1431879643}
+  - 131: {fileID: 1431879642}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &1431879642
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1431879641}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &1431879643
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1431879641}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .0700000003, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1582273420}
+  m_RootOrder: 0
+--- !u!1 &1442082463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1442082464}
+  - 114: {fileID: 1442082466}
+  - 114: {fileID: 1442082465}
+  m_Layer: 0
+  m_Name: img_WhoAnswer4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1442082464
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1442082463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .370000005, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1536128730}
+  m_Father: {fileID: 1333083748}
+  m_RootOrder: 3
+--- !u!114 &1442082465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1442082463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 1
+  answerNumber: 3
+  enabled: 0
+--- !u!114 &1442082466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1442082463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 1536128729}
+  clicked: 0
+--- !u!1 &1469915252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1469915253}
+  - 114: {fileID: 1469915255}
+  - 114: {fileID: 1469915254}
+  m_Layer: 0
+  m_Name: img_ChoosePrisoner4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1469915253
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1469915252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .460000008, y: .779999971, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 914670802}
+  m_Father: {fileID: 2008885857}
+  m_RootOrder: 3
+--- !u!114 &1469915254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1469915252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 1
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 0
+  answerNumber: 0
+  enabled: 0
+--- !u!114 &1469915255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1469915252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 914670801}
+  clicked: 0
 --- !u!1 &1487853471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,6 +3766,53 @@ MonoBehaviour:
   timeLimit: 180
   timerCounting: 0
   timeUp: 0
+--- !u!1 &1499687401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1499687402}
+  - 131: {fileID: 1499687403}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1499687402
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1499687401}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 659331705}
+  m_RootOrder: 0
+--- !u!131 &1499687403
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1499687401}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &1520971759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,6 +3844,279 @@ Transform:
   - {fileID: 2034344323}
   m_Father: {fileID: 765276660}
   m_RootOrder: 2
+--- !u!1 &1536128728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1536128730}
+  - 131: {fileID: 1536128729}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &1536128729
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1536128728}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &1536128730
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1536128728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1442082464}
+  m_RootOrder: 0
+--- !u!1 &1542935675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1542935676}
+  - 114: {fileID: 1542935678}
+  - 114: {fileID: 1542935677}
+  m_Layer: 0
+  m_Name: img_WhoAnswer3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1542935676
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1542935675}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .469999999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1642668921}
+  m_Father: {fileID: 1333083748}
+  m_RootOrder: 2
+--- !u!114 &1542935677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1542935675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 1
+  answerNumber: 2
+  enabled: 0
+--- !u!114 &1542935678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1542935675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 1642668922}
+  clicked: 0
+--- !u!1 &1582273419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1582273420}
+  - 114: {fileID: 1582273422}
+  - 114: {fileID: 1582273421}
+  m_Layer: 0
+  m_Name: img_ChoosePrisoner3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1582273420
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1582273419}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .379999995, y: .779999971, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1431879643}
+  m_Father: {fileID: 2008885857}
+  m_RootOrder: 2
+--- !u!114 &1582273421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1582273419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 1
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 2
+  answerType: 0
+  answerNumber: 0
+  enabled: 0
+--- !u!114 &1582273422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1582273419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 1431879642}
+  clicked: 0
+--- !u!1 &1619336851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1619336852}
+  - 131: {fileID: 1619336853}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1619336852
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1619336851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .0700000003, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1683931940}
+  m_RootOrder: 0
+--- !u!131 &1619336853
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1619336851}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!1 &1634242387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1634242388}
+  - 131: {fileID: 1634242389}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1634242388
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634242387}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 261528082}
+  m_RootOrder: 0
+--- !u!131 &1634242389
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1634242387}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &1642190922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,7 +4178,58 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
+--- !u!1 &1642668920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1642668921}
+  - 131: {fileID: 1642668922}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1642668921
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642668920}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1542935676}
+  m_RootOrder: 0
+--- !u!131 &1642668922
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642668920}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &1664406061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,6 +4277,166 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2012046118}
   m_RootOrder: 0
+--- !u!1 &1683931939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1683931940}
+  - 114: {fileID: 1683931942}
+  - 114: {fileID: 1683931941}
+  m_Layer: 0
+  m_Name: img_SelectedHow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1683931940
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1683931939}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .109999999, y: .280000001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1619336852}
+  m_Father: {fileID: 594268274}
+  m_RootOrder: 3
+--- !u!114 &1683931941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1683931939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 1
+  questionType: 0
+  smallQuestionType: 2
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
+  enabled: 0
+--- !u!114 &1683931942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1683931939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 1619336853}
+  clicked: 0
+--- !u!1 &1729594069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1729594070}
+  - 131: {fileID: 1729594071}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1729594070
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1729594069}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2091418447}
+  m_RootOrder: 0
+--- !u!131 &1729594071
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1729594069}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!1 &1755497154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1755497155}
+  - 131: {fileID: 1755497156}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1755497155
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755497154}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 371369822}
+  m_RootOrder: 0
+--- !u!131 &1755497156
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755497154}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &1764983703
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,6 +4532,10 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &1788350972
 MonoBehaviour:
@@ -1803,6 +4550,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTexture: {fileID: 2067800148}
   clicked: 0
+--- !u!1 &1797001645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1797001647}
+  - 131: {fileID: 1797001646}
+  m_Layer: 0
+  m_Name: UnityWatermark-small
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &1797001646
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1797001645}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 2eb58e2b5f44c2541ab535d91fb3d3cc, type: 3}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &1797001647
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1797001645}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: .319999993, y: .100000001, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1051983010}
+  m_RootOrder: 0
 --- !u!1 &1872792555
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,7 +4644,11 @@ MonoBehaviour:
   questionTimer: {fileID: 0}
   replaceTexture: {fileID: 0}
   ldIconType: 0
-  questionType: 0
+  questionType: 3
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &1872792558
 MonoBehaviour:
@@ -2148,6 +4946,10 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &1982267284
 MonoBehaviour:
@@ -2162,6 +4964,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTexture: {fileID: 1962573792}
   clicked: 0
+--- !u!1 &2008885856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2008885857}
+  m_Layer: 0
+  m_Name: gr_Choose_Prisoners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2008885857
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2008885856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1202707990}
+  - {fileID: 1316572139}
+  - {fileID: 1582273420}
+  - {fileID: 1469915253}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
 --- !u!1 &2012046115
 GameObject:
   m_ObjectHideFlags: 0
@@ -2197,6 +5030,10 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &2012046117
 MonoBehaviour:
@@ -2357,6 +5194,10 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &2034344322
 MonoBehaviour:
@@ -2513,6 +5354,10 @@ MonoBehaviour:
   replaceTexture: {fileID: 0}
   ldIconType: 0
   questionType: 0
+  smallQuestionType: 0
+  prisonerIconType: 0
+  answerType: 0
+  answerNumber: 0
   enabled: 0
 --- !u!114 &2073960495
 MonoBehaviour:
@@ -2540,6 +5385,72 @@ Transform:
   - {fileID: 1328763159}
   m_Father: {fileID: 71316517}
   m_RootOrder: 1
+--- !u!1 &2091418446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2091418447}
+  - 114: {fileID: 2091418449}
+  - 114: {fileID: 2091418448}
+  m_Layer: 0
+  m_Name: img_HowAnswer2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2091418447
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2091418446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .569999993, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1729594070}
+  m_Father: {fileID: 946200863}
+  m_RootOrder: 1
+--- !u!114 &2091418448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2091418446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 2
+  answerNumber: 1
+  enabled: 0
+--- !u!114 &2091418449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2091418446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 1729594071}
+  clicked: 0
 --- !u!1 &2099943372
 GameObject:
   m_ObjectHideFlags: 0
@@ -2587,6 +5498,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1642190923}
   m_RootOrder: 0
+--- !u!1 &2128109925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2128109928}
+  - 114: {fileID: 2128109927}
+  - 114: {fileID: 2128109926}
+  m_Layer: 0
+  m_Name: img_WhereAnswer2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2128109926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2128109925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8370c4ba2ee1814490e148d2349998d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interfaceType: 2
+  mmIconType: 3
+  prisonerInfoPanel: {fileID: 0}
+  questionTimer: {fileID: 0}
+  replaceTexture: {fileID: 0}
+  ldIconType: 2
+  questionType: 0
+  smallQuestionType: 4
+  prisonerIconType: 3
+  answerType: 0
+  answerNumber: 1
+  enabled: 0
+--- !u!114 &2128109927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2128109925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d6cf56eae7524eae66077caf55244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTexture: {fileID: 191504051}
+  clicked: 0
+--- !u!4 &2128109928
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2128109925}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .330000013, y: .569999993, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 191504052}
+  m_Father: {fileID: 303897188}
+  m_RootOrder: 1
 --- !u!1 &2137953897
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,6 +23,14 @@ public class GameManager : MonoBehaviour {
 	public enum LDQuestionType { Where, Who, How, When }
 	public LDQuestionType ldQuestionType;
 
+	public enum PickedPrisoner { P_1, P_2, P_3, P_4 }
+	public PickedPrisoner pickedPrisoner;
+
+	public enum AnswerType { Where, Who, How, When }
+	public AnswerType answerType;
+	public enum AnswerNumber { A_1, A_2, A_3, A_4 }
+	public AnswerNumber answerNumber;
+
 	//Wake function
 	void Awake () {
 		_pInstance = new GameManager ();
