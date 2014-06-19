@@ -1,13 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\DataField.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\DataFieldManager.cs">
     <Files>
+      <File FileName="Assets\DataField.cs" Line="9" Column="1" />
       <File FileName="Assets\GUI_Button.cs" Line="1" Column="1" />
-      <File FileName="Assets\InterfaceManager.cs" Line="20" Column="2" />
-      <File FileName="Assets\DataFieldInterface.cs" Line="4" Column="50" />
-      <File FileName="Assets\GameManager.cs" Line="14" Column="48" />
-      <File FileName="Assets\DataFieldManager.cs" Line="33" Column="3" />
-      <File FileName="Assets\DataField.cs" Line="9" Column="22" />
+      <File FileName="Assets\InterfaceManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\DataFieldInterface.cs" Line="1" Column="1" />
+      <File FileName="Assets\GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\DataFieldManager.cs" Line="36" Column="53" />
+      <File FileName="Assets\DataField.cs" Line="9" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
