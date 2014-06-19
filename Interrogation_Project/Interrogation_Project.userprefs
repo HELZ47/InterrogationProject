@@ -1,11 +1,31 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\DataFieldManager.cs">
+    <Files>
+      <File FileName="Assets\DataField.cs" Line="9" Column="1" />
+      <File FileName="Assets\GUI_Button.cs" Line="1" Column="1" />
+      <File FileName="Assets\InterfaceManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\DataFieldInterface.cs" Line="1" Column="1" />
+      <File FileName="Assets\GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\DataFieldManager.cs" Line="36" Column="53" />
+      <File FileName="Assets\DataField.cs" Line="9" Column="1" />
+=======
+>>>>>>> fc8a39967a270c7c1011732f0481e64054ebfaac
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\InterfaceManager.cs">
     <Files>
       <File FileName="Assets\InterfaceManager.cs" Line="343" Column="27" />
       <File FileName="Assets\GUI_Button.cs" Line="1" Column="1" />
+<<<<<<< HEAD
       <File FileName="Assets\GameManager.cs" Line="47" Column="91" />
       <File FileName="Assets\Question_Timer.cs" Line="45" Column="14" />
+=======
+      <File FileName="Assets\GameManager.cs" Line="24" Column="2" />
+>>>>>>> origin/master
+>>>>>>> fc8a39967a270c7c1011732f0481e64054ebfaac
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
