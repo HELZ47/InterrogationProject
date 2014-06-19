@@ -19,7 +19,7 @@ public class DataFieldManager : MonoBehaviour {
 	void Start () {
 		placeStrings = new string[4] {"Federal reserve", "Stock exchange", "Department of\nEqual Opportunity", "Liberty Bank HQ"};
 		timeStrings = new string[4] {"Monday\n1:00 PM", "Wednesday\n6:00 PM", "Thursday\n10:00 AM", "Friday\n2:00 PM"};
-		peopleStrings = new string[4] {"Mr. Wolfe\nJournalist", "Sarah Jackson\nFinancier", "Mei Yamato\nGovernment agent", "Mist\nProgrammer"};
+		peopleStrings = new string[4] {"Michael Deer\nJournalist", "Sarah Jackson\nFinancier", "Mei Yamato\nGovernment agent", "Mist\nProgrammer"};
 		meansStrings = new string[4] {"Cutting off\ncommunications", "Planting false\ninformation", "Shutting off\nthe power", "Bomb threat"};
 		
 		rightAnswers = new int[4] {1, 1, 2, 1};
