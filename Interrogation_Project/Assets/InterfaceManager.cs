@@ -30,6 +30,10 @@ public class InterfaceManager : MonoBehaviour {
 	public AnswerType answerType;
 	public enum AnswerNumber { A_1, A_2, A_3, A_4 }
 	public AnswerNumber answerNumber;
+	bool pickedAnswer;
+
+	public enum TruthOrLie { Truth, Lie, Return }
+	public TruthOrLie truthOrLie;
 
 	public bool enabled;
 
@@ -82,7 +86,7 @@ public class InterfaceManager : MonoBehaviour {
 				break;
 			case MMIconType.PrisonerIcon:
 				enabled = true;
-				if (GetComponent<GUI_Button>().clicked) {
+				if (GetComponent<GUI_Button>().clicked && GameManager.instance.gameState == GameManager.GameState.MainMenu) {
 					GameManager.instance.prisonerInfoPanel = this.prisonerInfoPanel;
 				}
 				break;
@@ -159,7 +163,8 @@ public class InterfaceManager : MonoBehaviour {
 				break;
 			case LDIconType.PickPrisoner:
 				if (GameManager.instance.lieDetectorState == GameManager.LieDetectorState.Pick_Prisoner
-				    || GameManager.instance.lieDetectorState == GameManager.LieDetectorState.Pick_Answer) {
+				    || GameManager.instance.lieDetectorState == GameManager.LieDetectorState.Pick_Answer
+				    || GameManager.instance.lieDetectorState == GameManager.LieDetectorState.Detect_Lie) {
 					switch (GameManager.instance.ldQuestionType) {
 					case GameManager.LDQuestionType.Where:
 						if (smallQuestionType == SmallQuestionType.Where) {
@@ -196,7 +201,45 @@ public class InterfaceManager : MonoBehaviour {
 					}
 
 					if (smallQuestionType == SmallQuestionType.PrisonerIcon) {
-						enabled = true;
+						if (GameManager.instance.lieDetectorState == GameManager.LieDetectorState.Pick_Prisoner) {
+							enabled = true;
+						}
+						else if (GameManager.instance.lieDetectorState != GameManager.LieDetectorState.Formulated_Question) {
+							switch (prisonerIconType) {
+							case PrisonerIconType.P_1:
+								if (GameManager.instance.pickedPrisoner == GameManager.PickedPrisoner.P_1) {
+									enabled = true;
+								}
+								else {
+									enabled = false;
+								}
+								break;
+							case PrisonerIconType.P_2:
+								if (GameManager.instance.pickedPrisoner == GameManager.PickedPrisoner.P_2) {
+									enabled = true;
+								}
+								else {
+									enabled = false;
+								}
+								break;
+							case PrisonerIconType.P_3:
+								if (GameManager.instance.pickedPrisoner == GameManager.PickedPrisoner.P_3) {
+									enabled = true;
+								}
+								else {
+									enabled = false;
+								}
+								break;
+							case PrisonerIconType.P_4:
+								if (GameManager.instance.pickedPrisoner == GameManager.PickedPrisoner.P_4) {
+									enabled = true;
+								}
+								else {
+									enabled = false;
+								}
+								break;
+							}
+						}
 						if (GetComponentInChildren<GUI_Button>().clicked
 						    && GameManager.instance.lieDetectorState == GameManager.LieDetectorState.Pick_Prisoner) {
 							switch (prisonerIconType) {
@@ -261,33 +304,78 @@ public class InterfaceManager : MonoBehaviour {
 						break;
 					}
 
-					if (GetComponentInChildren<GUI_Button>().clicked && enabled) {
+					if (GetComponentInChildren<GUI_Button>().clicked && enabled
+					    && GameManager.instance.lieDetectorState == GameManager.LieDetectorState.Pick_Answer) {
 						switch (answerNumber) {
 						case AnswerNumber.A_1:
 							GameManager.instance.answerNumber = GameManager.AnswerNumber.A_1;
 							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;
+							pickedAnswer = true;
 							break;
 						case AnswerNumber.A_2:
 							GameManager.instance.answerNumber = GameManager.AnswerNumber.A_2;
 							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;
+							pickedAnswer = true;
 							break;
 						case AnswerNumber.A_3:
 							GameManager.instance.answerNumber = GameManager.AnswerNumber.A_3;
 							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;
+							pickedAnswer = true;
 							break;
 						case AnswerNumber.A_4:
 							GameManager.instance.answerNumber = GameManager.AnswerNumber.A_4;
 							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;
+							pickedAnswer = true;
 							break;
+						}
+					}
+				}
+				else if (GameManager.instance.lieDetectorState == GameManager.LieDetectorState.Detect_Lie) {
+					if (pickedAnswer) {
+						enabled = true;
+					}
+					else {
+						enabled = false;
+					}
+				}
+				else {
+					enabled = false;
+					pickedAnswer = false;
+				}
+				break;
+			case LDIconType.DetectLie:
+				if (GameManager.instance.lieDetectorState == GameManager.LieDetectorState.Detect_Lie) {
+					if (GameManager.instance.tellingTruth) {
+						if (truthOrLie == TruthOrLie.Truth) {
+							enabled = true;
+						}
+						else {
+							enabled = false;
+						}
+					}
+					else if (!GameManager.instance.tellingTruth) {
+						if (truthOrLie == TruthOrLie.Truth) {
+							enabled = false;
+						}
+						else {
+							enabled = true;
+						}
+					}
+
+					if (truthOrLie == TruthOrLie.Return) {
+						enabled = true;
+						if (enabled && GetComponentInChildren<GUI_Button>().clicked) {
+							GameManager.instance.gameState = GameManager.GameState.MainMenu;
+							print ("timer reset!");
+							GameManager.instance.questionTimer.ResetTimer();
+							GameManager.instance.questionTimer.StartTimer();
+							GameManager.instance.prisonerInfoPanel = GameObject.Find ("img_StartQuestion_Instructions").GetComponent<InterfaceManager>();
 						}
 					}
 				}
 				else {
 					enabled = false;
 				}
-				break;
-			case LDIconType.DetectLie:
-
 				break;
 			}
 		}
