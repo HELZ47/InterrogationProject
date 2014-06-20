@@ -19,7 +19,14 @@ public class Question_Timer : MonoBehaviour {
 		if (timerCounting) {
 			timer -= Time.deltaTime;
 		}
-		bigTimer.text = smallTimer.text = ((int)(timer/60)).ToString() + ":" + (timer%60<10?"0":"") + Mathf.Floor((timer%60)).ToString("F0");//(timer%60).ToString("F0");
+		//bigTimer.text = smallTimer.text = ((int)(timer/60)).ToString() + ":" + (timer%60<10?"0":"") + Mathf.Floor((timer%60)).ToString("F0");//(timer%60).ToString("F0");
+		if (GameManager.instance.lieDetectorUsedTimes < 4) {
+			//bigTimer.text = smallTimer.text = ((int)(timer/60)).ToString() + ":" + (timer%60<10?"0":"") + Mathf.Floor((timer%60)).ToString("F0");//(timer%60).ToString("F0");
+			bigTimer.text = smallTimer.text = "Round " + (GameManager.instance.lieDetectorUsedTimes + 1).ToString() + "  " + ((int)(timer/60)).ToString() + ":" + (timer%60<10?"0":"") + Mathf.Floor((timer%60)).ToString("F0");
+		}
+		else {
+			bigTimer.text = smallTimer.text = "COMPLETE THE FORM!";
+		}
 
 		if (GameManager.instance.gameState == GameManager.GameState.MainMenu) {
 			smallTimer.enabled = timerCounting && !(GameManager.instance.prisonerInfoPanel == GameObject.Find ("img_StartQuestion_Instructions").GetComponent<InterfaceManager>());;

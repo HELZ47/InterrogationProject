@@ -13,7 +13,7 @@ public class End_Game_Interface : MonoBehaviour {
 	public FactType factType;
 	public Texture correctTexture;
 	
-	public enum ConvictionType { Prisoner, Send, Background,  }
+	public enum ConvictionType { Prisoner, Send, Background, Title, Convict }
 	public ConvictionType convictionType;
 	public enum PrisonerType { P_1, P_2, P_3, P_4 }
 	public PrisonerType prisonerType;
@@ -108,55 +108,111 @@ public class End_Game_Interface : MonoBehaviour {
 					break;
 				case ConvictionType.Prisoner:
 					enabled = true;
-					if (GetComponentInChildren<GUI_Button>().clicked) {
-						switch (prisonerType) {
-						case PrisonerType.P_1:
-							if (GameManager.instance.convictedPrisoner1 == GameManager.ConvictedPrisoner.None) {
-								GameManager.instance.convictedPrisoner1 = GameManager.ConvictedPrisoner.P_1;
-								GetComponentInChildren<GUITexture>().texture = correctTexture;
+					if (GameManager.instance.convictionState == GameManager.ConvictionState.Convicting) {
+						if (GetComponentInChildren<GUI_Button>().clicked) {
+							switch (prisonerType) {
+							case PrisonerType.P_1:
+								if (GameManager.instance.convictedPrisoner1 == GameManager.ConvictedPrisoner.None) {
+									GameManager.instance.convictedPrisoner1 = GameManager.ConvictedPrisoner.P_1;
+									GetComponentInChildren<GUITexture>().texture = correctTexture;
+								}
+								else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.None) {
+									GameManager.instance.convictedPrisoner2 = GameManager.ConvictedPrisoner.P_1;
+									GetComponentInChildren<GUITexture>().texture = correctTexture;
+								}
+								break;
+							case PrisonerType.P_2:
+								if (GameManager.instance.convictedPrisoner1 == GameManager.ConvictedPrisoner.None) {
+									GameManager.instance.convictedPrisoner1 = GameManager.ConvictedPrisoner.P_2;
+									GetComponentInChildren<GUITexture>().texture = correctTexture;
+								}
+								else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.None) {
+									GameManager.instance.convictedPrisoner2 = GameManager.ConvictedPrisoner.P_2;
+									GetComponentInChildren<GUITexture>().texture = correctTexture;
+								}
+								break;
+							case PrisonerType.P_3:
+								if (GameManager.instance.convictedPrisoner1 == GameManager.ConvictedPrisoner.None) {
+									GameManager.instance.convictedPrisoner1 = GameManager.ConvictedPrisoner.P_3;
+									GetComponentInChildren<GUITexture>().texture = correctTexture;
+								}
+								else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.None) {
+									GameManager.instance.convictedPrisoner2 = GameManager.ConvictedPrisoner.P_3;
+									GetComponentInChildren<GUITexture>().texture = correctTexture;
+								}
+								break;
+							case PrisonerType.P_4:
+								if (GameManager.instance.convictedPrisoner1 == GameManager.ConvictedPrisoner.None) {
+									GameManager.instance.convictedPrisoner1 = GameManager.ConvictedPrisoner.P_4;
+									GetComponentInChildren<GUITexture>().texture = correctTexture;
+								}
+								else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.None) {
+									GameManager.instance.convictedPrisoner2 = GameManager.ConvictedPrisoner.P_4;
+									GetComponentInChildren<GUITexture>().texture = correctTexture;
+								}
+								break;
 							}
-							else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.None) {
-								GameManager.instance.convictedPrisoner2 = GameManager.ConvictedPrisoner.P_1;
-								GetComponentInChildren<GUITexture>().texture = correctTexture;
+						}
+					}
+					else if (GameManager.instance.convictionState == GameManager.ConvictionState.Protecting) {
+						if (GetComponentInChildren<GUI_Button>().clicked && GetComponentInChildren<GUITexture>().texture != correctTexture) {
+							switch (prisonerType) {
+							case PrisonerType.P_1:
+								if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.None) {
+									GameManager.instance.protectedPrisoner = GameManager.ConvictedPrisoner.P_1;
+									GetComponentInChildren<GUITexture>().texture = correctTexture;
+								}
+								break;
+							case PrisonerType.P_2:
+								if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.None) {
+									GameManager.instance.protectedPrisoner = GameManager.ConvictedPrisoner.P_2;
+									GetComponentInChildren<GUITexture>().texture = correctTexture;
+								}
+								break;
+							case PrisonerType.P_3:
+								if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.None) {
+									GameManager.instance.protectedPrisoner = GameManager.ConvictedPrisoner.P_3;
+									GetComponentInChildren<GUITexture>().texture = correctTexture;
+								}
+								break;
+							case PrisonerType.P_4:
+								if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.None) {
+									GameManager.instance.protectedPrisoner = GameManager.ConvictedPrisoner.P_4;
+									GetComponentInChildren<GUITexture>().texture = correctTexture;
+								}
+								break;
 							}
-							break;
-						case PrisonerType.P_2:
-							if (GameManager.instance.convictedPrisoner1 == GameManager.ConvictedPrisoner.None) {
-								GameManager.instance.convictedPrisoner1 = GameManager.ConvictedPrisoner.P_2;
-								GetComponentInChildren<GUITexture>().texture = correctTexture;
-							}
-							else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.None) {
-								GameManager.instance.convictedPrisoner2 = GameManager.ConvictedPrisoner.P_2;
-								GetComponentInChildren<GUITexture>().texture = correctTexture;
-							}
-							break;
-						case PrisonerType.P_3:
-							if (GameManager.instance.convictedPrisoner1 == GameManager.ConvictedPrisoner.None) {
-								GameManager.instance.convictedPrisoner1 = GameManager.ConvictedPrisoner.P_3;
-								GetComponentInChildren<GUITexture>().texture = correctTexture;
-							}
-							else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.None) {
-								GameManager.instance.convictedPrisoner2 = GameManager.ConvictedPrisoner.P_3;
-								GetComponentInChildren<GUITexture>().texture = correctTexture;
-							}
-							break;
-						case PrisonerType.P_4:
-							if (GameManager.instance.convictedPrisoner1 == GameManager.ConvictedPrisoner.None) {
-								GameManager.instance.convictedPrisoner1 = GameManager.ConvictedPrisoner.P_4;
-								GetComponentInChildren<GUITexture>().texture = correctTexture;
-							}
-							else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.None) {
-								GameManager.instance.convictedPrisoner2 = GameManager.ConvictedPrisoner.P_4;
-								GetComponentInChildren<GUITexture>().texture = correctTexture;
-							}
-							break;
 						}
 					}
 					break;
 				case ConvictionType.Send:
+					if (GameManager.instance.convictionState == GameManager.ConvictionState.Protecting) {
+						enabled = true;
+						if (GetComponentInChildren<GUI_Button>().clicked) {
+							GameManager.instance.gameState = GameManager.GameState.EndGame;
+						}
+					}
+					else {
+						enabled = false;
+					}
+					break;
+				case ConvictionType.Convict:
+					if (GameManager.instance.convictionState == GameManager.ConvictionState.Convicting) {
+						enabled = true;
+						if (GetComponentInChildren<GUI_Button>().clicked
+						    && GameManager.instance.convictedPrisoner1 != GameManager.ConvictedPrisoner.None
+						    && GameManager.instance.convictedPrisoner2 != GameManager.ConvictedPrisoner.None) {
+							GameManager.instance.convictionState = GameManager.ConvictionState.Protecting;
+						}
+					}
+					else {
+						enabled = false;
+					}
+					break;
+				case ConvictionType.Title:
 					enabled = true;
-					if (GetComponentInChildren<GUI_Button>().clicked) {
-						GameManager.instance.gameState = GameManager.GameState.EndGame;
+					if (GameManager.instance.convictionState == GameManager.ConvictionState.Protecting) {
+						GetComponentInChildren<GUITexture>().texture = correctTexture;
 					}
 					break;
 				}
@@ -178,12 +234,18 @@ public class End_Game_Interface : MonoBehaviour {
 						else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.P_1) {
 							GetComponentInChildren<GUITexture>().texture = correctTexture;
 						}
+						else if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.P_1) {
+							GetComponentInChildren<GUITexture>().texture = correctTexture;
+						}
 						break;
 					case PrisonerProfile.P_2:
 						if (GameManager.instance.convictedPrisoner1 == GameManager.ConvictedPrisoner.P_2) {
 							GetComponentInChildren<GUITexture>().texture = correctTexture;
 						}
 						else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.P_2) {
+							GetComponentInChildren<GUITexture>().texture = correctTexture;
+						}
+						else if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.P_2) {
 							GetComponentInChildren<GUITexture>().texture = correctTexture;
 						}
 						break;
@@ -194,12 +256,18 @@ public class End_Game_Interface : MonoBehaviour {
 						else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.P_3) {
 							GetComponentInChildren<GUITexture>().texture = correctTexture;
 						}
+						else if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.P_3) {
+							GetComponentInChildren<GUITexture>().texture = correctTexture;
+						}
 						break;
 					case PrisonerProfile.P_4:
 						if (GameManager.instance.convictedPrisoner1 == GameManager.ConvictedPrisoner.P_4) {
 							GetComponentInChildren<GUITexture>().texture = correctTexture;
 						}
 						else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.P_4) {
+							GetComponentInChildren<GUITexture>().texture = correctTexture;
+						}
+						else if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.P_4) {
 							GetComponentInChildren<GUITexture>().texture = correctTexture;
 						}
 						break;
@@ -212,6 +280,9 @@ public class End_Game_Interface : MonoBehaviour {
 							enabled = true;
 						}
 						else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.P_1) {
+							enabled = true;
+						}
+						else if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.P_1) {
 							enabled = true;
 						}
 						else {
@@ -227,6 +298,10 @@ public class End_Game_Interface : MonoBehaviour {
 							enabled = true;
 							GetComponentInChildren<GUITexture>().texture = correctTexture;
 						}
+						else if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.P_2) {
+							enabled = true;
+							GetComponentInChildren<GUITexture>().texture = correctTexture;
+						}
 						else {
 							enabled = false;
 						}
@@ -236,6 +311,9 @@ public class End_Game_Interface : MonoBehaviour {
 							enabled = true;
 						}
 						else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.P_3) {
+							enabled = true;
+						}
+						else if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.P_3) {
 							enabled = true;
 						}
 						else {
@@ -248,6 +326,10 @@ public class End_Game_Interface : MonoBehaviour {
 							GetComponentInChildren<GUITexture>().texture = correctTexture;
 						}
 						else if (GameManager.instance.convictedPrisoner2 == GameManager.ConvictedPrisoner.P_4) {
+							enabled = true;
+							GetComponentInChildren<GUITexture>().texture = correctTexture;
+						}
+						else if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.P_4) {
 							enabled = true;
 							GetComponentInChildren<GUITexture>().texture = correctTexture;
 						}

@@ -38,6 +38,9 @@ public class GameManager : MonoBehaviour {
 	public enum ConvictedPrisoner { None, P_1, P_2, P_3, P_4 }
 	public ConvictedPrisoner convictedPrisoner1;
 	public ConvictedPrisoner convictedPrisoner2;
+	public ConvictedPrisoner protectedPrisoner;
+	public enum ConvictionState { Convicting, Protecting }
+	public ConvictionState convictionState;
 	
 	public float lieDetectorUsedTimes;
 

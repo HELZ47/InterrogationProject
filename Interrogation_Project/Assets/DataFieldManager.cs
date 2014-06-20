@@ -95,14 +95,14 @@ public class DataFieldManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (GameManager.instance.gameState == GameManager.GameState.MainMenu || GameManager.instance.gameState == GameManager.GameState.LieDetector) {
-			for (int i = 0; i < 4; i++) {
-				placeObjects[i].GetComponent<DataField>().text.enabled = true;
-				timeObjects[i].GetComponent<DataField>().text.enabled = true;
-				peopleObjects[i].GetComponent<DataField>().text.enabled = true;
-				meansObjects[i].GetComponent<DataField>().text.enabled = true;
-			}
-		}	
+//		if (GameManager.instance.gameState == GameManager.GameState.MainMenu || GameManager.instance.gameState == GameManager.GameState.LieDetector) {
+//			for (int i = 0; i < 4; i++) {
+//				placeObjects[i].GetComponent<DataField>().text.enabled = true;
+//				timeObjects[i].GetComponent<DataField>().text.enabled = true;
+//				peopleObjects[i].GetComponent<DataField>().text.enabled = true;
+//				meansObjects[i].GetComponent<DataField>().text.enabled = true;
+//			}
+//		}	
 	}
 	
 	public void Select (GameObject o, DataField.DataFieldType type) {
