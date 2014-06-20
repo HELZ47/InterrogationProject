@@ -24,6 +24,8 @@ public class End_Game_Interface : MonoBehaviour {
 	public PrisonerProfile prisonerProfile;
 	public enum PrisonerRevealType { R_1, R_2, R_3, R_4 }
 	public PrisonerRevealType prisonerRevealType;
+
+	bool chosenToProtect;
 	
 
 	// Use this for initialization
@@ -155,30 +157,37 @@ public class End_Game_Interface : MonoBehaviour {
 						}
 					}
 					else if (GameManager.instance.convictionState == GameManager.ConvictionState.Protecting) {
+						if (GetComponentInChildren<GUITexture>().texture == correctTexture && chosenToProtect != true) {
+							enabled = false;
+						}
 						if (GetComponentInChildren<GUI_Button>().clicked && GetComponentInChildren<GUITexture>().texture != correctTexture) {
 							switch (prisonerType) {
 							case PrisonerType.P_1:
 								if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.None) {
 									GameManager.instance.protectedPrisoner = GameManager.ConvictedPrisoner.P_1;
 									GetComponentInChildren<GUITexture>().texture = correctTexture;
+									chosenToProtect = true;
 								}
 								break;
 							case PrisonerType.P_2:
 								if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.None) {
 									GameManager.instance.protectedPrisoner = GameManager.ConvictedPrisoner.P_2;
 									GetComponentInChildren<GUITexture>().texture = correctTexture;
+									chosenToProtect = true;
 								}
 								break;
 							case PrisonerType.P_3:
 								if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.None) {
 									GameManager.instance.protectedPrisoner = GameManager.ConvictedPrisoner.P_3;
 									GetComponentInChildren<GUITexture>().texture = correctTexture;
+									chosenToProtect = true;
 								}
 								break;
 							case PrisonerType.P_4:
 								if (GameManager.instance.protectedPrisoner == GameManager.ConvictedPrisoner.None) {
 									GameManager.instance.protectedPrisoner = GameManager.ConvictedPrisoner.P_4;
 									GetComponentInChildren<GUITexture>().texture = correctTexture;
+									chosenToProtect = true;
 								}
 								break;
 							}
