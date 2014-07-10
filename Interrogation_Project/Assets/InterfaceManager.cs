@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class InterfaceManager : MonoBehaviour {
@@ -28,7 +28,7 @@ public class InterfaceManager : MonoBehaviour {
 
 	public enum AnswerType { Where, Who, How, When }
 	public AnswerType answerType;
-	public enum AnswerNumber { A_1, A_2, A_3, A_4 }
+	public enum AnswerNumber { A_1, A_2, A_3, A_4 , A_5}
 	public AnswerNumber answerNumber;
 	bool pickedAnswer;
 
@@ -250,21 +250,22 @@ public class InterfaceManager : MonoBehaviour {
 							switch (prisonerIconType) {
 							case PrisonerIconType.P_1:
 								GameManager.instance.pickedPrisoner = GameManager.PickedPrisoner.P_1;
-								GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Pick_Answer;
+							//	GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Pick_Answer;
 								break;
 							case PrisonerIconType.P_2:
 								GameManager.instance.pickedPrisoner = GameManager.PickedPrisoner.P_2;
-								GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Pick_Answer;
+							//	GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Pick_Answer;
 								break;
 							case PrisonerIconType.P_3:
 								GameManager.instance.pickedPrisoner = GameManager.PickedPrisoner.P_3;
-								GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Pick_Answer;
+							//	GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Pick_Answer;
 								break;
 							case PrisonerIconType.P_4:
 								GameManager.instance.pickedPrisoner = GameManager.PickedPrisoner.P_4;
-								GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Pick_Answer;
+							//	GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Pick_Answer;
 								break;
 							}
+							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Pick_Answer;
 						}
 					}
 				}
@@ -314,25 +315,35 @@ public class InterfaceManager : MonoBehaviour {
 						switch (answerNumber) {
 						case AnswerNumber.A_1:
 							GameManager.instance.answerNumber = GameManager.AnswerNumber.A_1;
-							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;
-							pickedAnswer = true;
+//							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;
+//							pickedAnswer = true;
 							break;
 						case AnswerNumber.A_2:
 							GameManager.instance.answerNumber = GameManager.AnswerNumber.A_2;
-							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;
-							pickedAnswer = true;
+//							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;
+//							pickedAnswer = true;
 							break;
 						case AnswerNumber.A_3:
 							GameManager.instance.answerNumber = GameManager.AnswerNumber.A_3;
-							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;
-							pickedAnswer = true;
+//							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;
+//							pickedAnswer = true;
 							break;
+
 						case AnswerNumber.A_4:
 							GameManager.instance.answerNumber = GameManager.AnswerNumber.A_4;
-							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;
-							pickedAnswer = true;
+//							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;
+//							pickedAnswer = true;
 							break;
+
+						case AnswerNumber.A_5:
+							GameManager.instance.answerNumber = GameManager.AnswerNumber.A_5;
+//							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;
+//							pickedAnswer = true;
+							break;
+
 						}
+						GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;
+						pickedAnswer = true;
 					}
 				}
 				else if (GameManager.instance.lieDetectorState == GameManager.LieDetectorState.Detect_Lie) {

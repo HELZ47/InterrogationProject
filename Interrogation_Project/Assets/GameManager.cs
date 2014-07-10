@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour {
 
 	public enum AnswerType { Where, Who, How, When }
 	public AnswerType answerType;
-	public enum AnswerNumber { A_1, A_2, A_3, A_4 }
+	public enum AnswerNumber { A_1, A_2, A_3, A_4, A_5 }
 	public AnswerNumber answerNumber;
 
 	public bool tellingTruth;
@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour {
 				_pInstance.lieDetectorState = LieDetectorState.Formulated_Question;
 			}
 			break;
-		case GameState.LieDetector:
+		case GameState.LieDetector: //this is a hard coded section to compare the player's corresponding facts and answer selection
 			switch (_pInstance.lieDetectorState) {
 			case LieDetectorState.Detect_Lie:
 				switch (_pInstance.pickedPrisoner) {
@@ -91,6 +91,14 @@ public class GameManager : MonoBehaviour {
 					}
 					else if (_pInstance.ldQuestionType == LDQuestionType.When
 					         && _pInstance.answerNumber == AnswerNumber.A_2) {
+						_pInstance.tellingTruth = true;
+					}
+					else if(_pInstance.ldQuestionType == LDQuestionType.Who
+					         && _pInstance.answerNumber == AnswerNumber.A_5) {
+						_pInstance.tellingTruth = true;
+					}
+					else if(_pInstance.ldQuestionType == LDQuestionType.How
+					        && _pInstance.answerNumber == AnswerNumber.A_5) {
 						_pInstance.tellingTruth = true;
 					}
 					else {
@@ -110,6 +118,10 @@ public class GameManager : MonoBehaviour {
 					         && _pInstance.answerNumber == AnswerNumber.A_2) {
 						_pInstance.tellingTruth = true;
 					}
+					else if(_pInstance.ldQuestionType == LDQuestionType.When
+					        && _pInstance.answerNumber == AnswerNumber.A_5) {
+						_pInstance.tellingTruth = true;
+					}
 					else {
 						_pInstance.tellingTruth = false;
 					}
@@ -117,6 +129,18 @@ public class GameManager : MonoBehaviour {
 				case PickedPrisoner.P_3:
 					if (_pInstance.ldQuestionType == LDQuestionType.Who
 					    && _pInstance.answerNumber == AnswerNumber.A_3) {
+						_pInstance.tellingTruth = true;
+					}
+					else if (_pInstance.ldQuestionType == LDQuestionType.Where
+					         && _pInstance.answerNumber == AnswerNumber.A_5) {
+						_pInstance.tellingTruth = true;
+					}
+					else if (_pInstance.ldQuestionType == LDQuestionType.How
+					         && _pInstance.answerNumber == AnswerNumber.A_5) {
+						_pInstance.tellingTruth = true;
+					}
+					else if (_pInstance.ldQuestionType == LDQuestionType.When
+					         && _pInstance.answerNumber == AnswerNumber.A_5) {
 						_pInstance.tellingTruth = true;
 					}
 					else {
@@ -134,6 +158,11 @@ public class GameManager : MonoBehaviour {
 					}
 					else if (_pInstance.ldQuestionType == LDQuestionType.How
 					         && _pInstance.answerNumber == AnswerNumber.A_2) {
+						_pInstance.tellingTruth = true;
+					}
+					else if (_pInstance.ldQuestionType == LDQuestionType.Who
+					         && _pInstance.answerNumber == AnswerNumber.A_5) {
+						Debug.Log("Player 4, Idk for who should be true.");
 						_pInstance.tellingTruth = true;
 					}
 					else {
