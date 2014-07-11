@@ -495,6 +495,7 @@ MonoBehaviour:
   lieDetectorState: 0
   ldQuestionType: 0
   pickedPrisoner: 0
+  ap: {fileID: 0}
   answerType: 0
   answerNumber: 0
   tellingTruth: 0
@@ -12410,6 +12411,7 @@ GameObject:
   - 81: {fileID: 1940556448}
   - 114: {fileID: 1940556447}
   - 114: {fileID: 1940556453}
+  - 114: {fileID: 1940556454}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -12508,6 +12510,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a9639ea4475ec43991b10aa0cc03ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1940556454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1940556446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6adba0291008e54996d1d355f522a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crim1: 0
+  crim2: 0
+  activ1: 2
+  activ2: 0
 --- !u!1 &1944361627
 GameObject:
   m_ObjectHideFlags: 0

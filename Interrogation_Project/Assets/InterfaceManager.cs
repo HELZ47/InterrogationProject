@@ -40,7 +40,7 @@ public class InterfaceManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
@@ -312,7 +312,7 @@ public class InterfaceManager : MonoBehaviour {
 
 					if (GetComponentInChildren<GUI_Button>().clicked && enabled
 					    && GameManager.instance.lieDetectorState == GameManager.LieDetectorState.Pick_Answer) {
-						switch (answerNumber) {
+						switch (answerNumber) {//this is "recording" the input of the inspector. Not comparing.
 						case AnswerNumber.A_1:
 							GameManager.instance.answerNumber = GameManager.AnswerNumber.A_1;
 //							GameManager.instance.lieDetectorState = GameManager.LieDetectorState.Detect_Lie;

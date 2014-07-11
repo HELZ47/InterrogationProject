@@ -46,14 +46,20 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AssignPrisoner.cs" />
+     <Compile Include="Assets\AttackDetails.cs" />
      <Compile Include="Assets\Controller.cs" />
      <Compile Include="Assets\DataField.cs" />
      <Compile Include="Assets\DataFieldManager.cs" />
      <Compile Include="Assets\End_Game_Interface.cs" />
+     <Compile Include="Assets\Fact.cs" />
      <Compile Include="Assets\GUI_Button.cs" />
      <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\InterfaceManager.cs" />
+     <Compile Include="Assets\Prisoner.cs" />
+     <Compile Include="Assets\Profile.cs" />
      <Compile Include="Assets\Question_Timer.cs" />
+     <Compile Include="Assets\Rumor.cs" />
      <Compile Include="Assets\XInputDotNet\Examples\XInputTestCS.cs" />
      <None Include="Assets\XInputDotNet\MITLicense.txt" />
  <Reference Include="XInputDotNetPure">

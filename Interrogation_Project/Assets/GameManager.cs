@@ -19,6 +19,11 @@ public class GameManager : MonoBehaviour {
 	public InterfaceManager prisonerInfoPanel;
 	public Question_Timer questionTimer;
 
+
+	//formulated qustion = pick question (inspector)
+	//pick_prisoner = inspector pick player
+	//pick_answer = inspector enters player's choice. Ex: prisoner says "Idk", 2you put "Idk" in the program
+	//detect lie = process to see if it is a lie 
 	public enum LieDetectorState { Formulated_Question, Pick_Prisoner, Pick_Answer, Detect_Lie }
 	public LieDetectorState lieDetectorState;
 
@@ -27,6 +32,8 @@ public class GameManager : MonoBehaviour {
 
 	public enum PickedPrisoner { P_1, P_2, P_3, P_4 }
 	public PickedPrisoner pickedPrisoner;
+
+	public AssignPrisoner ap; // this will be the new way to reference the answer number
 
 	public enum AnswerType { Where, Who, How, When }
 	public AnswerType answerType;
@@ -44,22 +51,61 @@ public class GameManager : MonoBehaviour {
 	
 	public float lieDetectorUsedTimes;
 
+
 	//Wake function
 	void Awake () {
 		_pInstance = new GameManager ();
+
 	}
 
 	// Use this for initialization
 	void Start () {
+		Random.seed = (int)System.DateTime.Now.Ticks;
 		_pInstance.gameState = GameState.Startup;
 		_pInstance.prisonerInfoPanel = GameObject.Find ("img_StartGame_Instructions").GetComponent<InterfaceManager>();
 		_pInstance.questionTimer = GameObject.Find ("gr_GameTimers").GetComponent<Question_Timer>();
+
+		ap = new AssignPrisoner();
+		ap.assignRole( Random.Range(0,4), Random.Range(0,4) );
+		ap.assignInformation();
+
+		for(int i = 0; i < 4; i++)
+		{
+			Debug.Log (ap.prisoner[i].outPut());
+		}
+
+
 	}
-	
+
+	public void isActivist(Prisoner p, int actNum)
+	{
+		if(actNum == ap.activ1)
+		{
+			//compare the answers
+		}
+		if(actNum == ap.activ2)
+		{
+			//compare the answers
+		}
+	}
+
+	public void isHacker(Prisoner p, int crimNum)
+	{
+			if(crimNum == ap.crim1)
+			{
+			//compare the answers
+			}
+
+			if(crimNum == ap.crim2)
+			{
+			//compare the answers
+			}
+	}
+
 	// Update is called once per frame
 	void Update () {
-		print (_pInstance.convictedPrisoner1);
-		print (_pInstance.convictedPrisoner2);
+		//	print (_pInstance.convictedPrisoner1); //not sure what this does
+	//	print (_pInstance.convictedPrisoner2); //not sure what this does
 		//print (_pInstance.ldQuestionType.ToString () + " " + _pInstance.pickedPrisoner + " " + _pInstance.answerNumber + " " + _pInstance.tellingTruth);
 		switch (_pInstance.gameState) {
 		case GameState.Startup:
@@ -84,6 +130,18 @@ public class GameManager : MonoBehaviour {
 			switch (_pInstance.lieDetectorState) {
 			case LieDetectorState.Detect_Lie:
 				switch (_pInstance.pickedPrisoner) {
+				/*
+				case PickedPrisoner.P_1:
+					if (_pInstance.ldQuestionType == LDQuestionType.Where
+					    && _pInstance.answerNumber == ap.prisoner[0].f.where) {
+						_pInstance.tellingTruth = true;
+					}
+*/
+
+			
+
+				
+//this is the original 
 				case PickedPrisoner.P_1:
 					if (_pInstance.ldQuestionType == LDQuestionType.Where
 					    && _pInstance.answerNumber == AnswerNumber.A_2) {
